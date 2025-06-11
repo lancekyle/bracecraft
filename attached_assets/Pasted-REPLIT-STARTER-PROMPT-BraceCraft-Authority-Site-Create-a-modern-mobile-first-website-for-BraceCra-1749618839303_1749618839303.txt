@@ -1,0 +1,162 @@
+REPLIT STARTER PROMPT: BraceCraft Authority Site
+
+Create a modern, mobile-first website for BraceCraft - an athletic injury prevention and recovery authority site.
+
+Tech Stack Requirements
+
+•
+Framework: React (latest version)
+
+•
+Styling: Tailwind CSS
+
+•
+Routing: React Router for multi-page navigation
+
+•
+Deployment: Replit hosting
+
+•
+Performance: Optimize for fast loading and mobile-first design
+
+Design Requirements
+
+Color Palette (Tailwind Custom Colors)
+
+JavaScript
+
+
+// tailwind.config.js
+module.exports = {
+  theme: {
+    extend: {
+      colors: {
+        'brand-teal': '#1B4D4D',
+        'athletic-blue': '#2E86AB',
+        'warm-orange': '#F18F01',
+        'success-green': '#10B981',
+        'charcoal': '#2D3748',
+        'gray-custom': '#4A5568',
+        'light-gray': '#F7FAFC',
+      }
+    }
+  }
+}
+
+
+Typography
+
+•
+Font: Inter from Google Fonts
+
+•
+Implementation: Use Tailwind typography classes
+
+•
+Hierarchy: Clear heading structure (h1, h2, h3) for SEO
+
+Site Structure & Routing
+
+Create these React components/pages:
+
+1.
+Homepage (/) - Hero section, featured injury guides, video showcase
+
+2.
+Plantar Fasciitis Guide (/guides/plantar-fasciitis) - Comprehensive injury guide template
+
+3.
+Video Library (/videos) - Organized video content
+
+4.
+About (/about) - Company story and medical backing
+
+Component Architecture
+
+Plain Text
+
+
+src/
+├── components/
+│   ├── Header.jsx (navigation)
+│   ├── Footer.jsx
+│   ├── Hero.jsx
+│   ├── InjuryGuideCard.jsx
+│   └── VideoCard.jsx
+├── pages/
+│   ├── Home.jsx
+│   ├── PlanterFasciitisGuide.jsx
+│   ├── VideoLibrary.jsx
+│   └── About.jsx
+└── App.jsx (routing setup)
+
+
+Key Features to Implement
+
+•
+Responsive Design: Mobile-first with Tailwind breakpoints
+
+•
+Navigation: Sticky header with mobile hamburger menu
+
+•
+SEO Optimization: Proper meta tags, semantic HTML
+
+•
+Performance: Lazy loading for images, optimized components
+
+•
+Accessibility: ARIA labels, keyboard navigation
+
+Homepage Layout (React Components)
+
+•
+Header Component: Logo + navigation (responsive)
+
+•
+Hero Component: "Don't Let Injury Sideline Your Goals" + CTA buttons
+
+•
+Featured Guides Component: Grid of injury guide cards
+
+•
+Video Showcase Component: Featured exercise videos
+
+•
+Footer Component: Links and contact info
+
+Styling Guidelines
+
+•
+Use Tailwind utility classes
+
+•
+Mobile-first responsive design (sm:, md:, lg: breakpoints)
+
+•
+Consistent spacing with Tailwind spacing scale
+
+•
+Professional medical aesthetic with clean layouts
+
+•
+Hover states and smooth transitions
+
+Content Structure
+
+•
+SEO-friendly: Proper heading hierarchy (h1, h2, h3)
+
+•
+Readable: Good contrast ratios and typography
+
+•
+Scannable: Clear sections and white space
+
+•
+Actionable: Clear CTAs and navigation
+
+Brand Voice
+
+
+
