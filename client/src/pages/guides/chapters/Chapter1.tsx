@@ -7,7 +7,8 @@ import {
   TrendingUp, 
   Brain,
   Zap,
-  CheckCircle2
+  CheckCircle2,
+  Clock
 } from "lucide-react";
 import ChapterTemplate from "@/components/ChapterTemplate";
 import { Link } from "wouter";
@@ -65,125 +66,37 @@ export default function Chapter1() {
         </CardContent>
       </Card>
 
-      {/* Why Standard Advice Fails */}
+      {/* The Standard Advice Problem */}
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-charcoal mb-6">Why Standard Plantar Fasciitis Advice Fails Athletes</h2>
+        <h2 className="text-2xl font-bold text-charcoal mb-6">The Standard Advice Problem</h2>
         
         <p className="text-gray-custom mb-6 text-lg leading-relaxed">
-          If you're reading this guide, chances are you've already encountered the standard plantar fasciitis advice: 
-          "Rest until it doesn't hurt." For most athletes, this advice is not only impractical—it's counterproductive.
+          Standard plantar fasciitis advice centers on one recommendation: complete rest until symptoms resolve. 
+          This approach works for sedentary individuals experiencing heel pain during daily activities. 
+          <strong className="text-charcoal"> It fails catastrophically for athletes.</strong>
         </p>
 
-        <Card className="mb-6">
-          <CardContent className="p-6">
-            <h3 className="text-xl font-semibold text-charcoal mb-4">The Standard Advice Problem</h3>
-            <div className="space-y-4">
-              <div className="flex items-start space-x-3">
-                <div className="w-2 h-2 bg-destructive rounded-full mt-2 flex-shrink-0"></div>
-                <div>
-                  <strong className="text-charcoal">Complete Rest:</strong> 
-                  <span className="text-gray-custom"> Leads to deconditioning, lost fitness, and psychological frustration</span>
-                </div>
-              </div>
-              <div className="flex items-start space-x-3">
-                <div className="w-2 h-2 bg-destructive rounded-full mt-2 flex-shrink-0"></div>
-                <div>
-                  <strong className="text-charcoal">Generic Exercises:</strong> 
-                  <span className="text-gray-custom"> Don't account for training loads and athletic demands</span>
-                </div>
-              </div>
-              <div className="flex items-start space-x-3">
-                <div className="w-2 h-2 bg-destructive rounded-full mt-2 flex-shrink-0"></div>
-                <div>
-                  <strong className="text-charcoal">One-Size-Fits-All:</strong> 
-                  <span className="text-gray-custom"> Ignores race goals, training cycles, and individual circumstances</span>
-                </div>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-
-        <p className="text-gray-custom mb-6 leading-relaxed">
-          Standard medical advice is designed for the general population—people whose primary concern is walking 
-          to the mailbox pain-free. As an athlete, your demands are fundamentally different. You need solutions 
-          that maintain performance while managing symptoms.
-        </p>
-      </section>
-
-      {/* Training vs Daily Activity Demands */}
-      <section className="mb-12">
-        <h2 className="text-2xl font-bold text-charcoal mb-6">Training vs. Daily Activity: A Different Game</h2>
-        
-        <div className="grid md:grid-cols-2 gap-6 mb-6">
-          <Card>
-            <CardContent className="p-6">
-              <div className="flex items-center mb-4">
-                <div className="text-gray-custom mr-3">
-                  <Target className="w-6 h-6" />
-                </div>
-                <h3 className="text-lg font-semibold text-charcoal">Daily Activities</h3>
-              </div>
-              <ul className="space-y-2 text-gray-custom">
-                <li>• Low-intensity walking</li>
-                <li>• Minimal impact forces</li>
-                <li>• Flexible timing</li>
-                <li>• Easy to modify or avoid</li>
-              </ul>
-            </CardContent>
-          </Card>
-
-          <Card>
-            <CardContent className="p-6">
-              <div className="flex items-center mb-4">
-                <div className="text-athletic-blue mr-3">
-                  <TrendingUp className="w-6 h-6" />
-                </div>
-                <h3 className="text-lg font-semibold text-charcoal">Athletic Training</h3>
-              </div>
-              <ul className="space-y-2 text-gray-custom">
-                <li>• High-intensity efforts</li>
-                <li>• Repetitive impact forces</li>
-                <li>• Structured progressions</li>
-                <li>• Performance consequences</li>
-              </ul>
-            </CardContent>
-          </Card>
-        </div>
-
-        <Card className="bg-athletic-blue bg-opacity-5 border-athletic-blue">
-          <CardContent className="p-6">
-            <h4 className="font-semibold text-charcoal mb-3">The Athletic Reality</h4>
-            <p className="text-gray-custom">
-              When you're training for a race, every week matters. A month of complete rest might eliminate 
-              your heel pain, but it also eliminates months of fitness gains. The key is finding the sweet 
-              spot where you can maintain training adaptations while managing tissue load.
-            </p>
-          </CardContent>
-        </Card>
-      </section>
-
-      {/* Performance Maintenance Strategy */}
-      <section className="mb-12">
-        <h2 className="text-2xl font-bold text-charcoal mb-6">The Performance Maintenance Strategy</h2>
-        
-        <p className="text-gray-custom mb-6 leading-relaxed">
-          Instead of stopping training entirely, we focus on maintaining your cardiovascular fitness, 
-          muscular strength, and movement patterns while reducing plantar fascia stress. This approach 
-          requires more thought than complete rest, but it preserves your athletic progress.
+        <p className="text-gray-custom mb-8 leading-relaxed">
+          The failure isn't about compliance or stubbornness. Athletes face fundamentally different mechanical 
+          demands, timeline pressures, and performance requirements that standard protocols don't address.
         </p>
 
         <div className="space-y-6 mb-8">
           <Card>
             <CardContent className="p-6">
               <div className="flex items-start space-x-4">
-                <div className="text-success-green">
-                  <Zap className="w-6 h-6" />
+                <div className="text-destructive">
+                  <AlertTriangle className="w-6 h-6" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-charcoal mb-2">Cardiovascular Maintenance</h4>
-                  <p className="text-gray-custom">
-                    Substitute high-impact running with pool running, cycling, or elliptical training 
-                    at equivalent intensities to maintain your aerobic base.
+                  <h4 className="font-semibold text-charcoal mb-2">Training Load Reality</h4>
+                  <p className="text-gray-custom mb-3">
+                    Athletic training generates forces 2-3 times body weight through the plantar fascia, 
+                    repeated thousands of times per session. A 150-pound runner produces 300-450 pounds 
+                    of force per foot strike during a typical training run.
+                  </p>
+                  <p className="text-sm text-gray-custom italic">
+                    This mechanical stress exceeds daily living demands by orders of magnitude.
                   </p>
                 </div>
               </div>
@@ -193,14 +106,18 @@ export default function Chapter1() {
           <Card>
             <CardContent className="p-6">
               <div className="flex items-start space-x-4">
-                <div className="text-success-green">
-                  <Target className="w-6 h-6" />
+                <div className="text-warm-orange">
+                  <Clock className="w-6 h-6" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-charcoal mb-2">Strength Preservation</h4>
-                  <p className="text-gray-custom">
-                    Continue strength training with modifications that avoid aggravating positions 
-                    while building supporting muscle groups.
+                  <h4 className="font-semibold text-charcoal mb-2">Timeline Constraints</h4>
+                  <p className="text-gray-custom mb-3">
+                    Athletes typically discover PF 8-16 weeks before goal races. Complete rest until 
+                    asymptomatic would eliminate months of training and potentially entire competitive seasons.
+                  </p>
+                  <p className="text-sm text-gray-custom italic">
+                    Cardiovascular fitness begins declining within 7-10 days of inactivity, with 15-25% 
+                    losses possible after 3-4 weeks.
                   </p>
                 </div>
               </div>
@@ -210,139 +127,367 @@ export default function Chapter1() {
           <Card>
             <CardContent className="p-6">
               <div className="flex items-start space-x-4">
-                <div className="text-success-green">
+                <div className="text-athletic-blue">
                   <TrendingUp className="w-6 h-6" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-charcoal mb-2">Progressive Loading</h4>
-                  <p className="text-gray-custom">
-                    Gradually reintroduce running volume and intensity based on tissue tolerance, 
-                    not arbitrary timelines.
+                  <h4 className="font-semibold text-charcoal mb-2">Performance Decay</h4>
+                  <p className="text-gray-custom mb-3">
+                    Unlike general fitness maintenance, athletic performance requires specific neuromuscular 
+                    adaptations that deteriorate rapidly without consistent stimulus.
+                  </p>
+                  <p className="text-sm text-gray-custom italic">
+                    Alternative activities can maintain aerobic capacity but cannot fully preserve running 
+                    economy or sport-specific coordination.
                   </p>
                 </div>
               </div>
             </CardContent>
           </Card>
-        </div>
-      </section>
-
-      {/* Decision Framework */}
-      <section className="mb-12">
-        <h2 className="text-2xl font-bold text-charcoal mb-6">Decision Framework: Modify vs. Rest</h2>
-        
-        <p className="text-gray-custom mb-6 leading-relaxed">
-          The key to successful plantar fasciitis management lies in making smart daily decisions about 
-          training modifications. Here's the framework we'll use throughout this guide:
-        </p>
-
-        <Card className="mb-6">
-          <CardContent className="p-6">
-            <h3 className="text-xl font-semibold text-charcoal mb-4">The Traffic Light System</h3>
-            <div className="space-y-4">
-              <div className="flex items-center space-x-4 p-4 bg-success-green bg-opacity-10 rounded-lg">
-                <div className="w-4 h-4 bg-success-green rounded-full flex-shrink-0"></div>
-                <div>
-                  <strong className="text-charcoal">Green Light (0-3/10 pain):</strong>
-                  <span className="text-gray-custom"> Normal training with surface considerations</span>
-                </div>
-              </div>
-              <div className="flex items-center space-x-4 p-4 bg-warm-orange bg-opacity-10 rounded-lg">
-                <div className="w-4 h-4 bg-warm-orange rounded-full flex-shrink-0"></div>
-                <div>
-                  <strong className="text-charcoal">Yellow Light (4-6/10 pain):</strong>
-                  <span className="text-gray-custom"> Modified training with alternative surfaces/activities</span>
-                </div>
-              </div>
-              <div className="flex items-center space-x-4 p-4 bg-destructive bg-opacity-10 rounded-lg">
-                <div className="w-4 h-4 bg-destructive rounded-full flex-shrink-0"></div>
-                <div>
-                  <strong className="text-charcoal">Red Light (7-10/10 pain):</strong>
-                  <span className="text-gray-custom"> Cross-training only or complete rest day</span>
-                </div>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-      </section>
-
-      {/* Athletic Psychology */}
-      <section className="mb-12">
-        <h2 className="text-2xl font-bold text-charcoal mb-6">Athletic Psychology Considerations</h2>
-        
-        <Card className="mb-6">
-          <CardContent className="p-6">
-            <div className="flex items-start space-x-4">
-              <div className="text-athletic-blue">
-                <Brain className="w-6 h-6" />
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold text-charcoal mb-3">The Mental Game</h3>
-                <p className="text-gray-custom mb-4">
-                  Plantar fasciitis affects more than just your feet—it impacts your confidence, training consistency, 
-                  and race goals. Understanding the psychological aspects is crucial for long-term success.
-                </p>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-
-        <div className="space-y-4 mb-6">
-          <div className="flex items-start space-x-3">
-            <CheckCircle2 className="w-5 h-5 text-success-green mt-0.5 flex-shrink-0" />
-            <div>
-              <strong className="text-charcoal">Maintain Training Identity:</strong>
-              <span className="text-gray-custom"> Continue identifying as an athlete in training, not an injured person</span>
-            </div>
-          </div>
-          <div className="flex items-start space-x-3">
-            <CheckCircle2 className="w-5 h-5 text-success-green mt-0.5 flex-shrink-0" />
-            <div>
-              <strong className="text-charcoal">Focus on What You Can Control:</strong>
-              <span className="text-gray-custom"> Training modifications, surface choices, and recovery protocols</span>
-            </div>
-          </div>
-          <div className="flex items-start space-x-3">
-            <CheckCircle2 className="w-5 h-5 text-success-green mt-0.5 flex-shrink-0" />
-            <div>
-              <strong className="text-charcoal">Reframe Success Metrics:</strong>
-              <span className="text-gray-custom"> Celebrate smart training decisions, not just pain-free days</span>
-            </div>
-          </div>
         </div>
 
         <Card className="bg-brand-teal bg-opacity-5 border-brand-teal">
           <CardContent className="p-6">
-            <p className="text-gray-custom italic">
-              "The strongest athletes aren't those who never get injured—they're the ones who adapt, 
-              modify, and continue pursuing their goals despite setbacks."
+            <p className="text-gray-custom font-medium">
+              The solution isn't abandoning medical principles—it's applying them intelligently within athletic contexts.
             </p>
           </CardContent>
         </Card>
       </section>
 
-      {/* Chapter Summary */}
-      <section className="mb-8">
-        <Card className="bg-light-gray">
+      {/* Training vs Daily Activity Demands */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold text-charcoal mb-6">Training vs Daily Activity Demands</h2>
+        
+        <p className="text-gray-custom mb-6 leading-relaxed">
+          Athletic training creates unique healing challenges that require modified management approaches.
+        </p>
+
+        <div className="space-y-6 mb-8">
+          <Card>
+            <CardContent className="p-6">
+              <h4 className="font-semibold text-charcoal mb-3">Force and Frequency</h4>
+              <p className="text-gray-custom mb-3">
+                Running generates repetitive high-force loading cycles that don't occur in daily activities. 
+                Each training session can involve 8,000-15,000 foot strikes at forces exceeding 2x body weight.
+              </p>
+              <p className="text-sm text-gray-custom italic">
+                This cumulative loading creates a fundamentally different tissue stress environment.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardContent className="p-6">
+              <h4 className="font-semibold text-charcoal mb-3">Movement Complexity</h4>
+              <p className="text-gray-custom mb-3">
+                Athletic movements require rapid transitions between plantar fascia flexibility (shock absorption) 
+                and rigidity (propulsion). This mechanical cycling occurs in milliseconds during each foot strike, 
+                demanding tissue adaptations beyond normal walking or standing.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardContent className="p-6">
+              <h4 className="font-semibold text-charcoal mb-3">Recovery Intervals</h4>
+              <p className="text-gray-custom mb-3">
+                While sedentary individuals have 16-20 hours between significant foot loading, athletes often 
+                train daily with 12-24 hour recovery windows. This compressed timeline requires strategic 
+                loading management rather than complete avoidance.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardContent className="p-6">
+              <h4 className="font-semibold text-charcoal mb-3">Adaptation Stimulus</h4>
+              <p className="text-gray-custom mb-3">
+                Connective tissue healing requires controlled mechanical stimulus. Complete rest eliminates 
+                the loading necessary for optimal tissue remodeling.
+              </p>
+              <p className="text-sm text-athletic-blue font-medium">
+                The challenge is identifying the optimal stimulus zone—enough load to promote healing 
+                without exceeding current tissue capacity.
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      {/* Performance Maintenance Strategy */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold text-charcoal mb-6">Performance Maintenance Strategy</h2>
+        
+        <p className="text-gray-custom mb-6 leading-relaxed">
+          The goal during PF management isn't pain elimination—it's maintaining competitive fitness while 
+          allowing tissue adaptation. This requires understanding which performance components are resilient 
+          to modification and which require careful preservation.
+        </p>
+
+        <div className="space-y-6 mb-8">
+          <Card>
+            <CardContent className="p-6">
+              <h4 className="font-semibold text-charcoal mb-3">Aerobic Fitness Preservation</h4>
+              <p className="text-gray-custom">
+                Cardiovascular adaptations can be maintained through alternative activities that don't stress 
+                the plantar fascia. Cycling, swimming, and elliptical training can preserve aerobic capacity 
+                with appropriate intensity management.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardContent className="p-6">
+              <h4 className="font-semibold text-charcoal mb-3">Neuromuscular Coordination</h4>
+              <p className="text-gray-custom">
+                Running-specific coordination is more fragile and requires targeted maintenance. Complete 
+                elimination of running-related movement patterns leads to rapid performance degradation 
+                that alternative training cannot prevent.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardContent className="p-6">
+              <h4 className="font-semibold text-charcoal mb-3">Biomechanical Efficiency</h4>
+              <p className="text-gray-custom">
+                Running economy depends on specific movement patterns and muscle activation sequences. 
+                Strategic maintenance of running-specific training, even if modified, is often necessary 
+                for competitive readiness.
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+
+        <Card className="bg-success-green bg-opacity-5 border-success-green">
           <CardContent className="p-6">
-            <h3 className="text-xl font-semibold text-charcoal mb-4">Chapter 1 Key Takeaways</h3>
-            <div className="space-y-3">
+            <p className="text-gray-custom font-medium">
+              Smart athletes can typically maintain 80-90% of performance capacity through intelligent 
+              training modifications rather than complete activity cessation.
+            </p>
+          </CardContent>
+        </Card>
+      </section>
+
+      {/* Decision Framework */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold text-charcoal mb-6">Decision Framework: Modify vs Rest</h2>
+        
+        <p className="text-gray-custom mb-6 leading-relaxed">
+          Athletes need clear, practical criteria for daily training decisions. Here's a framework based on 
+          clinical experience and research on PF pain patterns:
+        </p>
+
+        <Card className="mb-6">
+          <CardContent className="p-6">
+            <h3 className="text-xl font-semibold text-charcoal mb-4">Morning Assessment (Primary Decision Point)</h3>
+            <p className="text-gray-custom mb-4">
+              Your first steps out of bed are the most reliable indicator of plantar fascia status:
+            </p>
+            <div className="space-y-4">
               <div className="flex items-start space-x-3">
-                <Badge variant="outline" className="mt-0.5">1</Badge>
-                <span className="text-gray-custom">Standard plantar fasciitis advice fails athletes because it ignores training demands</span>
+                <div className="w-2 h-2 bg-success-green rounded-full mt-2 flex-shrink-0"></div>
+                <div>
+                  <strong className="text-charcoal">Minimal discomfort (feels stiff but manageable):</strong>
+                  <span className="text-gray-custom"> Proceed with planned training, minor modifications</span>
+                </div>
               </div>
               <div className="flex items-start space-x-3">
-                <Badge variant="outline" className="mt-0.5">2</Badge>
-                <span className="text-gray-custom">Performance maintenance strategies preserve fitness while managing symptoms</span>
+                <div className="w-2 h-2 bg-warm-orange rounded-full mt-2 flex-shrink-0"></div>
+                <div>
+                  <strong className="text-charcoal">Moderate pain (makes you limp for first few steps):</strong>
+                  <span className="text-gray-custom"> Significant training modifications required</span>
+                </div>
               </div>
               <div className="flex items-start space-x-3">
-                <Badge variant="outline" className="mt-0.5">3</Badge>
-                <span className="text-gray-custom">The traffic light system guides daily training decisions</span>
-              </div>
-              <div className="flex items-start space-x-3">
-                <Badge variant="outline" className="mt-0.5">4</Badge>
-                <span className="text-gray-custom">Athletic psychology plays a crucial role in successful management</span>
+                <div className="w-2 h-2 bg-destructive rounded-full mt-2 flex-shrink-0"></div>
+                <div>
+                  <strong className="text-charcoal">Severe pain (sharp, makes you avoid weight-bearing):</strong>
+                  <span className="text-gray-custom"> Rest day or complete modification to non-weight bearing exercise</span>
+                </div>
               </div>
             </div>
+          </CardContent>
+        </Card>
+
+        <Card className="mb-6">
+          <CardContent className="p-6">
+            <h3 className="text-xl font-semibold text-charcoal mb-4">Training Time Assessment</h3>
+            <p className="text-gray-custom mb-4">
+              PF pain typically decreases throughout the day as tissues warm up. This is why many athletes 
+              can train in the afternoon/evening even with morning symptoms:
+            </p>
+            <div className="space-y-3">
+              <div className="flex items-start space-x-3">
+                <CheckCircle2 className="w-5 h-5 text-success-green mt-0.5 flex-shrink-0" />
+                <div>
+                  <strong className="text-charcoal">Morning pain that resolves within 30 minutes of movement:</strong>
+                  <span className="text-gray-custom"> Training later in the day is usually possible</span>
+                </div>
+              </div>
+              <div className="flex items-start space-x-3">
+                <AlertTriangle className="w-5 h-5 text-warm-orange mt-0.5 flex-shrink-0" />
+                <div>
+                  <strong className="text-charcoal">Pain that persists despite warming up:</strong>
+                  <span className="text-gray-custom"> Training modifications needed regardless of timing</span>
+                </div>
+              </div>
+              <div className="flex items-start space-x-3">
+                <AlertTriangle className="w-5 h-5 text-destructive mt-0.5 flex-shrink-0" />
+                <div>
+                  <strong className="text-charcoal">Pain that worsens with activity:</strong>
+                  <span className="text-gray-custom"> Stop and reassess</span>
+                </div>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
+        <Card className="mb-6">
+          <CardContent className="p-6">
+            <h3 className="text-xl font-semibold text-charcoal mb-4">During-Training Guidelines</h3>
+            <div className="space-y-3">
+              <div className="flex items-start space-x-3">
+                <div className="w-2 h-2 bg-success-green rounded-full mt-2 flex-shrink-0"></div>
+                <div>
+                  <strong className="text-charcoal">Stable discomfort:</strong>
+                  <span className="text-gray-custom"> Continue but monitor closely</span>
+                </div>
+              </div>
+              <div className="flex items-start space-x-3">
+                <div className="w-2 h-2 bg-warm-orange rounded-full mt-2 flex-shrink-0"></div>
+                <div>
+                  <strong className="text-charcoal">Increasing pain or altered mechanics:</strong>
+                  <span className="text-gray-custom"> Stop immediately and modify approach</span>
+                </div>
+              </div>
+              <div className="flex items-start space-x-3">
+                <div className="w-2 h-2 bg-destructive rounded-full mt-2 flex-shrink-0"></div>
+                <div>
+                  <strong className="text-charcoal">Sharp, acute pain:</strong>
+                  <span className="text-gray-custom"> Complete cessation required</span>
+                </div>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
+        <Card className="bg-athletic-blue bg-opacity-5 border-athletic-blue">
+          <CardContent className="p-6">
+            <h4 className="font-semibold text-charcoal mb-3">Next-Day Assessment</h4>
+            <p className="text-gray-custom">
+              Use morning symptoms to guide the following day's decisions. Worsening morning pain indicates 
+              previous day's training was excessive.
+            </p>
+          </CardContent>
+        </Card>
+      </section>
+
+      {/* Implementation Approach */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold text-charcoal mb-6">Implementation Approach</h2>
+        
+        <p className="text-gray-custom mb-6 leading-relaxed">
+          Effective PF management for athletes requires systematic application of modified training principles:
+        </p>
+
+        <div className="space-y-6 mb-8">
+          <Card>
+            <CardContent className="p-6">
+              <div className="flex items-start space-x-4">
+                <div className="text-athletic-blue">
+                  <Target className="w-6 h-6" />
+                </div>
+                <div>
+                  <h4 className="font-semibold text-charcoal mb-2">Assessment</h4>
+                  <p className="text-gray-custom">
+                    Accurate diagnosis and severity grading to determine appropriate modification levels
+                  </p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardContent className="p-6">
+              <div className="flex items-start space-x-4">
+                <div className="text-athletic-blue">
+                  <TrendingUp className="w-6 h-6" />
+                </div>
+                <div>
+                  <h4 className="font-semibold text-charcoal mb-2">Strategy</h4>
+                  <p className="text-gray-custom">
+                    Race-distance specific training modifications that maintain competitive readiness
+                  </p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardContent className="p-6">
+              <div className="flex items-start space-x-4">
+                <div className="text-athletic-blue">
+                  <Zap className="w-6 h-6" />
+                </div>
+                <div>
+                  <h4 className="font-semibold text-charcoal mb-2">Equipment</h4>
+                  <p className="text-gray-custom">
+                    Gear choices that prioritize training completion over optimal recovery
+                  </p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardContent className="p-6">
+              <div className="flex items-start space-x-4">
+                <div className="text-athletic-blue">
+                  <Clock className="w-6 h-6" />
+                </div>
+                <div>
+                  <h4 className="font-semibold text-charcoal mb-2">Timeline</h4>
+                  <p className="text-gray-custom">
+                    Post-race recovery planning that addresses long-term foot health
+                  </p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+
+        <p className="text-gray-custom mb-6 leading-relaxed">
+          The following chapters provide specific implementation strategies for each component, allowing 
+          athletes to maintain race goals while respecting tissue healing requirements.
+        </p>
+
+        <Card className="bg-brand-teal text-white">
+          <CardContent className="p-6">
+            <h4 className="text-xl font-bold mb-3">Bottom Line</h4>
+            <p className="text-lg font-medium mb-3">
+              Smart training beats stopped training.
+            </p>
+            <p className="text-gray-100">
+              Athletes don't have to choose between foot health and race goals—they need intelligent 
+              strategies that address both simultaneously.
+            </p>
+          </CardContent>
+        </Card>
+      </section>
+
+      {/* Next Chapter Preview */}
+      <section className="mb-8">
+        <Card className="bg-light-gray border-l-4 border-l-athletic-blue">
+          <CardContent className="p-6">
+            <h3 className="text-lg font-semibold text-charcoal mb-3">
+              Next: Confirming your diagnosis and ruling out conditions that require different approaches...
+            </h3>
+            <p className="text-gray-custom">
+              Chapter 2 will guide you through self-assessment techniques, red flags that require immediate 
+              medical attention, and severity grading to determine your specific modification approach.
+            </p>
           </CardContent>
         </Card>
       </section>
