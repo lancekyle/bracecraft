@@ -141,7 +141,7 @@ export default function ChapterTemplate({
               onClick={() => window.print()}
               className="text-gray-600 hover:text-charcoal"
             >
-              <Print className="w-4 h-4 mr-2" />
+              <Printer className="w-4 h-4 mr-2" />
               Print
             </Button>
           </div>
