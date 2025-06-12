@@ -8,6 +8,7 @@ import Footer from "@/components/Footer";
 import Home from "@/pages/Home";
 import PlanterFasciitisGuide from "@/pages/PlanterFasciitisGuide";
 import VideoLibrary from "@/pages/VideoLibrary";
+import Resources from "@/pages/Resources";
 import About from "@/pages/About";
 import NotFound from "@/pages/not-found";
 
@@ -20,6 +21,7 @@ function Router() {
           <Route path="/" component={Home} />
           <Route path="/guides/plantar-fasciitis" component={PlanterFasciitisGuide} />
           <Route path="/videos" component={VideoLibrary} />
+          <Route path="/resources" component={Resources} />
           <Route path="/about" component={About} />
           <Route component={NotFound} />
         </Switch>

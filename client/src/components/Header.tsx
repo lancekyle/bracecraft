@@ -23,6 +23,7 @@ export default function Header() {
     { href: "/", label: "Home" },
     { href: "/guides/plantar-fasciitis", label: "Injury Guides" },
     { href: "/videos", label: "Video Library" },
+    { href: "/resources", label: "Resources" },
     { href: "/about", label: "About" },
   ];
 

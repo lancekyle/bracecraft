@@ -67,6 +67,13 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/resources">
+                  <span className="text-gray-300 hover:text-warm-orange transition-colors duration-200 cursor-pointer">
+                    Resources
+                  </span>
+                </Link>
+              </li>
+              <li>
                 <Link href="/about">
                   <span className="text-gray-300 hover:text-warm-orange transition-colors duration-200 cursor-pointer">
                     About Us
