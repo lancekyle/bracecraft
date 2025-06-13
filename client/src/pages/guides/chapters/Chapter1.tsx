@@ -12,7 +12,7 @@ import {
 } from "lucide-react";
 import ChapterTemplate from "@/components/ChapterTemplate";
 import { Link } from "wouter";
-import chapterHeaderImage from "@assets/Chapter 1 header.webp";
+import chapterHeaderImage from "@assets/chapter1-header.webp";
 import nextDayAssessmentImage from "@assets/image_1749781660694.png";
 
 export default function Chapter1() {
