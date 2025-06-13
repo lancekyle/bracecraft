@@ -137,7 +137,7 @@ export default function Chapter2() {
               <div className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-athletic-blue rounded-full mt-2"></div>
                 <div>
-                  <h4 className="font-semibold text-charcoal mb-2">First-step pain</h4>
+                  <h3 className="font-semibold text-charcoal mb-2">First-step pain</h3>
                   <p className="text-gray-custom">
                     Sharp, stabbing heel pain that's worst with the first few steps after getting out of bed
                   </p>
@@ -151,7 +151,7 @@ export default function Chapter2() {
               <div className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-athletic-blue rounded-full mt-2"></div>
                 <div>
-                  <h4 className="font-semibold text-charcoal mb-2">Post-rest flare-ups</h4>
+                  <h3 className="font-semibold text-charcoal mb-2">Post-rest flare-ups</h3>
                   <p className="text-gray-custom">
                     Similar pain after sitting for 30+ minutes, then standing/walking
                   </p>
@@ -165,7 +165,7 @@ export default function Chapter2() {
               <div className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-athletic-blue rounded-full mt-2"></div>
                 <div>
-                  <h4 className="font-semibold text-charcoal mb-2">Activity response</h4>
+                  <h3 className="font-semibold text-charcoal mb-2">Activity response</h3>
                   <p className="text-gray-custom">
                     Pain often decreases with gentle movement but increases with high-impact or prolonged activity
                   </p>
@@ -179,7 +179,7 @@ export default function Chapter2() {
               <div className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-athletic-blue rounded-full mt-2"></div>
                 <div>
-                  <h4 className="font-semibold text-charcoal mb-2">Location specificity</h4>
+                  <h3 className="font-semibold text-charcoal mb-2">Location specificity</h3>
                   <p className="text-gray-custom">
                     Pain at the bottom of the heel, not the sides or back
                   </p>
@@ -191,7 +191,7 @@ export default function Chapter2() {
 
         <Card className="bg-slate-50 dark:bg-slate-900">
           <CardContent className="p-6">
-            <h4 className="font-semibold text-charcoal dark:text-gray-100 mb-4">Time-of-Day Variations</h4>
+            <h3 className="font-semibold text-charcoal dark:text-gray-100 mb-4">Time-of-Day Variations</h3>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Badge variant="destructive" className="min-w-fit">Worst</Badge>
@@ -262,7 +262,7 @@ export default function Chapter2() {
         <div className="space-y-6">
           <Card>
             <CardContent className="p-6">
-              <h4 className="font-semibold text-charcoal mb-3">Achilles Tendonitis</h4>
+              <h3 className="font-semibold text-charcoal mb-3">Achilles Tendonitis</h3>
               <p className="text-gray-custom">
                 Pain and stiffness at the back of the heel, especially noticeable when pushing off 
                 during running or walking uphill.
@@ -272,7 +272,7 @@ export default function Chapter2() {
 
           <Card>
             <CardContent className="p-6">
-              <h4 className="font-semibold text-charcoal mb-3">Heel Pad Syndrome</h4>
+              <h3 className="font-semibold text-charcoal mb-3">Heel Pad Syndrome</h3>
               <p className="text-gray-custom">
                 Deep, aching heel pain that's worse on hard surfaces and doesn't improve with the 
                 classic PF treatments.
@@ -282,7 +282,7 @@ export default function Chapter2() {
 
           <Card>
             <CardContent className="p-6">
-              <h4 className="font-semibold text-charcoal mb-3">Tarsal Tunnel Syndrome</h4>
+              <h3 className="font-semibold text-charcoal mb-3">Tarsal Tunnel Syndrome</h3>
               <p className="text-gray-custom">
                 Heel pain accompanied by numbness, tingling, or burning sensations that may 
                 extend into the arch or toes.
@@ -292,7 +292,7 @@ export default function Chapter2() {
 
           <Card>
             <CardContent className="p-6">
-              <h4 className="font-semibold text-charcoal mb-3">Stress Fractures</h4>
+              <h3 className="font-semibold text-charcoal mb-3">Stress Fractures</h3>
               <p className="text-gray-custom">
                 Usually present with activity-related pain that doesn't improve with warming up. Often 
                 affects both the heel bone or nearby foot bones.
@@ -302,7 +302,7 @@ export default function Chapter2() {
 
           <Card>
             <CardContent className="p-6">
-              <h4 className="font-semibold text-charcoal mb-3">Fat Pad Atrophy</h4>
+              <h3 className="font-semibold text-charcoal mb-3">Fat Pad Atrophy</h3>
               <p className="text-gray-custom">
                 More common in older athletes, presents as deep heel pain that's worse on hard 
                 surfaces and doesn't follow the typical PF morning pattern.
@@ -347,7 +347,7 @@ export default function Chapter2() {
 
         <Card className="bg-emerald-50 dark:bg-emerald-950 border-l-4 border-l-success-green">
           <CardContent className="p-6">
-            <h4 className="font-semibold text-charcoal dark:text-gray-100 mb-4">Key Takeaways</h4>
+            <h3 className="font-semibold text-charcoal dark:text-gray-100 mb-4">Key Takeaways</h3>
             <div className="space-y-3">
               <div className="flex items-start space-x-3">
                 <CheckCircle2 className="w-5 h-5 text-success-green mt-0.5 flex-shrink-0" />

@@ -35,8 +35,8 @@ export default function ChapterNavigation({
   const [progress, setProgress] = useState<{[key: string]: boolean}>({});
 
   const chapters: Chapter[] = [
-    { id: 1, title: "The Athletic Difference", slug: "athletic-difference" },
-    { id: 2, title: "Know What You're Dealing With", slug: "assessment" },
+    { id: 1, title: "Why Standard Advice Fails Athletes", slug: "why-standard-advice-fails" },
+    { id: 2, title: "Know What You're Dealing With", slug: "know-what-youre-dealing-with" },
     { id: 3, title: "Race Distance Training Modifications", slug: "race-modifications" },
     { id: 4, title: "Training Modifications", slug: "training-modifications" },
     { id: 5, title: "Gear Strategy for Race Training", slug: "gear-strategy" },
@@ -100,7 +100,7 @@ export default function ChapterNavigation({
             {/* Navigation Buttons */}
             <div className="flex items-center space-x-2 ml-4">
               {previousChapter && (
-                <Link href={`/guides/plantar-fasciitis/${guideSlug}/chapter-${previousChapter}`}>
+                <Link href={`/plantar-fasciitis/race-training/${chapters.find(c => c.id === previousChapter)?.slug}`}>
                   <Button variant="outline" size="sm">
                     <ChevronLeft className="w-4 h-4 mr-1" />
                     <span className="hidden sm:inline">Previous</span>
@@ -109,7 +109,7 @@ export default function ChapterNavigation({
               )}
               
               {nextChapter && (
-                <Link href={`/guides/plantar-fasciitis/${guideSlug}/chapter-${nextChapter}`}>
+                <Link href={`/plantar-fasciitis/race-training/${chapters.find(c => c.id === nextChapter)?.slug}`}>
                   <Button size="sm" className="bg-athletic-blue hover:bg-athletic-blue/90">
                     <span className="hidden sm:inline">Next</span>
                     <ChevronRight className="w-4 h-4 ml-1" />
@@ -146,7 +146,7 @@ export default function ChapterNavigation({
             
             <div className="p-4 space-y-2 overflow-y-auto">
               {chapters.map((chapter) => (
-                <Link key={chapter.id} href={`/guides/plantar-fasciitis/${guideSlug}/chapter-${chapter.id}`}>
+                <Link key={chapter.id} href={`/plantar-fasciitis/race-training/${chapter.slug}`}>
                   <Card 
                     className={`cursor-pointer transition-all duration-200 ${
                       currentChapter === chapter.id ? 'ring-2 ring-athletic-blue' : ''
