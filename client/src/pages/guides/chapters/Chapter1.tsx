@@ -159,11 +159,16 @@ export default function Chapter1() {
           </Card>
         </div>
 
-        <Card className="bg-brand-teal bg-opacity-5 border-brand-teal">
+        <Card className="bg-blue-50 dark:bg-blue-950 border-l-4 border-l-athletic-blue">
           <CardContent className="p-6">
-            <p className="text-gray-custom font-medium">
-              The solution isn't abandoning medical principles—it's applying them intelligently within athletic contexts.
-            </p>
+            <div className="flex items-start space-x-3">
+              <div className="text-athletic-blue">
+                <CheckCircle2 className="w-5 h-5 mt-0.5" />
+              </div>
+              <p className="text-charcoal dark:text-gray-100 font-medium text-lg">
+                The solution isn't abandoning medical principles—it's applying them intelligently within athletic contexts.
+              </p>
+            </div>
           </CardContent>
         </Card>
       </section>
@@ -273,12 +278,17 @@ export default function Chapter1() {
           </Card>
         </div>
 
-        <Card className="bg-success-green bg-opacity-5 border-success-green">
+        <Card className="bg-emerald-50 dark:bg-emerald-950 border-l-4 border-l-success-green">
           <CardContent className="p-6">
-            <p className="text-gray-custom font-medium">
-              Smart athletes can typically maintain 80-90% of performance capacity through intelligent 
-              training modifications rather than complete activity cessation.
-            </p>
+            <div className="flex items-start space-x-3">
+              <div className="text-success-green">
+                <TrendingUp className="w-5 h-5 mt-0.5" />
+              </div>
+              <p className="text-charcoal dark:text-gray-100 font-medium text-lg">
+                Smart athletes can typically maintain 80-90% of performance capacity through intelligent 
+                training modifications rather than complete activity cessation.
+              </p>
+            </div>
           </CardContent>
         </Card>
       </section>
@@ -386,13 +396,20 @@ export default function Chapter1() {
           </CardContent>
         </Card>
 
-        <Card className="bg-athletic-blue bg-opacity-5 border-athletic-blue">
+        <Card className="bg-blue-50 dark:bg-blue-950 border-l-4 border-l-athletic-blue">
           <CardContent className="p-6">
-            <h4 className="font-semibold text-charcoal mb-3">Next-Day Assessment</h4>
-            <p className="text-gray-custom mb-4">
-              Use morning symptoms to guide the following day's decisions. Worsening morning pain indicates 
-              previous day's training was excessive.
-            </p>
+            <div className="flex items-start space-x-3 mb-4">
+              <div className="text-athletic-blue">
+                <Clock className="w-5 h-5 mt-0.5" />
+              </div>
+              <div>
+                <h4 className="font-semibold text-charcoal dark:text-gray-100 mb-2">Next-Day Assessment</h4>
+                <p className="text-gray-custom dark:text-gray-300">
+                  Use morning symptoms to guide the following day's decisions. Worsening morning pain indicates 
+                  previous day's training was excessive.
+                </p>
+              </div>
+            </div>
             <div className="flex justify-center mt-4">
               <div className="w-full max-w-sm">
                 <img 
