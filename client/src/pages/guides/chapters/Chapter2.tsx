@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import ChapterTemplate from "@/components/ChapterTemplate";
 import ChapterCTA from "@/components/ChapterCTA";
+import SEOHead from "@/components/SEOHead";
 import { Link } from "wouter";
 import chapterHeaderImage from "@assets/chapter2-header.webp";
 
