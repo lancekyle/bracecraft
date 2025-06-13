@@ -1,0 +1,94 @@
+OBJECTIVE:
+Fix the "Course info: 1 invalid item detected" error in Google's Rich Results Test by removing or correcting conflicting schema markup.
+STEP 1: LOCATE CONFLICTING SCHEMA
+Search your HTML for these potential conflicting schema types:
+html<!-- Look for and REMOVE or FIX these schema types: -->
+<script type="application/ld+json">
+{
+  "@type": "Course"
+  // or
+  "@type": "LearningResource"
+  // or
+  "@type": "EducationalResource"
+}
+</script>
+STEP 2: COMMON LOCATIONS TO CHECK
+A. In the <head> section:
+Look for multiple <script type="application/ld+json"> blocks and ensure only these remain:
+KEEP THIS (Your working FAQ schema):
+html<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [...]
+}
+</script>
+KEEP THIS (Your article schema):
+html<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Know What You're Dealing With",
+  // ... other article properties
+}
+</script>
+B. In navigation or breadcrumb sections:
+Look for schema that might be treating the guide as a "Course":
+REMOVE or FIX:
+html<!-- If you find something like this, remove it -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "Race Training Guide"
+}
+</script>
+STEP 3: SPECIFIC FIXES
+Option 1: Remove Course Schema (Recommended)
+If you find Course-related schema, simply delete the entire <script type="application/ld+json"> block containing "@type": "Course".
+Option 2: Fix Course Schema (Advanced)
+If you want to keep course-like structure, ensure it's properly formatted:
+html<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "BraceCraft Race Training Guide",
+  "description": "Athletic plantar fasciitis management guide",
+  "provider": {
+    "@type": "Organization",
+    "name": "BraceCraft"
+  },
+  "courseCode": "PF-RACE-GUIDE",
+  "educationalLevel": "Intermediate"
+}
+</script>
+STEP 4: BREADCRUMB SCHEMA CHECK
+Ensure your breadcrumb schema (if present) doesn't conflict:
+CORRECT breadcrumb format:
+html<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+    "@type": "ListItem",
+    "position": 1,
+    "name": "Home",
+    "item": "https://bracecrft.com"
+  }, {
+    "@type": "ListItem",
+    "position": 2,
+    "name": "Plantar Fasciitis",
+    "item": "https://bracecraft.com/plantar-fasciitis"
+  }, {
+    "@type": "ListItem",
+    "position": 3,
+    "name": "Know What You're Dealing With"
+  }]
+}
+</script>
+STEP 5: CLEAN HTML STRUCTURE
+Also check for inline schema attributes that might conflict:
+Remove these if found:
+html<!-- Remove course-related microdata -->
+<div itemscope itemtype="http://schema.org/Course">
+<span itemprop="courseCode">...</span>

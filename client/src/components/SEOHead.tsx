@@ -141,12 +141,11 @@ export default function SEOHead({
         "keywords": keywords || "plantar fasciitis, athletic training, sports medicine",
         ...(chapterNumber && totalChapters && {
           "isPartOf": {
-            "@type": "Course",
+            "@type": "CreativeWorkSeries",
             "name": "Race Training with Plantar Fasciitis Guide",
             "description": "Complete guide for athletes training with plantar fasciitis"
           },
-          "position": chapterNumber,
-          "numberOfPages": totalChapters
+          "position": chapterNumber
         }),
         ...(readingTime && {
           "timeRequired": readingTime
