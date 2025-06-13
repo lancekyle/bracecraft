@@ -11,31 +11,13 @@ import {
   Clock
 } from "lucide-react";
 import ChapterTemplate from "@/components/ChapterTemplate";
+import ChapterCTA from "@/components/ChapterCTA";
 import { Link } from "wouter";
 import chapterHeaderImage from "@assets/chapter1-header.webp";
 import morningPainImage from "@assets/morning-pain.webp";
 
 export default function Chapter1() {
-  const ctaSection = (
-    <Card className="bg-brand-teal text-white">
-      <CardContent className="p-8">
-        <h3 className="text-2xl font-bold mb-4">Ready to Assess Your Situation?</h3>
-        <p className="text-gray-100 mb-6">
-          Now that you understand why conventional advice fails athletes, it's time to properly assess your plantar fasciitis and create your personalized training strategy.
-        </p>
-        <div className="flex flex-col sm:flex-row gap-4">
-          <Link href="/guides/plantar-fasciitis/training-guide/chapter-2">
-            <Button className="bg-warm-orange hover:bg-warm-orange/90 text-white">
-              Continue to Chapter 2: Assessment
-            </Button>
-          </Link>
-          <Button variant="outline" className="border-white text-white hover:bg-white hover:text-brand-teal">
-            Download PF Relief Kit Guide
-          </Button>
-        </div>
-      </CardContent>
-    </Card>
-  );
+  const ctaSection = <ChapterCTA />;
 
   return (
     <ChapterTemplate
