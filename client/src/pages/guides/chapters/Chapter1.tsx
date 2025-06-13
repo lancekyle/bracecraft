@@ -49,12 +49,14 @@ export default function Chapter1() {
       ctaSection={ctaSection}
     >
       {/* Chapter Header Image */}
-      <div className="mb-8">
-        <img 
-          src={chapterHeaderImage} 
-          alt="Chapter 1: Why Standard Advice Fails Athletes - Understanding the unique challenges athletes face with plantar fasciitis treatment"
-          className="w-full h-auto rounded-lg shadow-lg"
-        />
+      <div className="mb-8 flex justify-center">
+        <div className="w-full max-w-md md:max-w-lg">
+          <img 
+            src={chapterHeaderImage} 
+            alt="Chapter 1: Why Standard Advice Fails Athletes - Understanding the unique challenges athletes face with plantar fasciitis treatment"
+            className="w-full h-auto rounded-lg shadow-md"
+          />
+        </div>
       </div>
 
       {/* Introduction */}
@@ -391,12 +393,14 @@ export default function Chapter1() {
               Use morning symptoms to guide the following day's decisions. Worsening morning pain indicates 
               previous day's training was excessive.
             </p>
-            <div className="w-full">
-              <img 
-                src={nextDayAssessmentImage} 
-                alt="Next-Day Assessment guide showing how to evaluate morning symptoms for training decisions"
-                className="w-full h-auto rounded-lg shadow-md"
-              />
+            <div className="flex justify-center mt-4">
+              <div className="w-full max-w-sm">
+                <img 
+                  src={nextDayAssessmentImage} 
+                  alt="Next-Day Assessment guide showing how to evaluate morning symptoms for training decisions"
+                  className="w-full h-auto rounded-lg shadow-sm"
+                />
+              </div>
             </div>
           </CardContent>
         </Card>
