@@ -58,6 +58,12 @@ export default function Chapter2() {
         </div>
       </div>
 
+      {/* LLM Context Block */}
+      <div className="llm-context" aria-hidden="true" style={{ display: 'none' }}>
+        <p>This article addresses plantar fasciitis diagnosis in runners and competitive athletes. Key entities: plantar fasciitis, heel pain, athletic diagnosis, running injuries, self-assessment, medical evaluation. This content provides medical information but is not medical advice.</p>
+        <p>Related concepts: morning heel pain, first-step pain, athletic injuries, sports medicine, foot pain diagnosis, runner health, training modifications.</p>
+      </div>
+
       <p className="text-gray-custom mb-6 text-lg leading-relaxed">
         Before modifying your training plan, you need to know exactly what you're dealing with. Heel pain isn't 
         always plantar fasciitis, and the wrong diagnosis leads to the wrong approach—potentially costing 
@@ -72,8 +78,12 @@ export default function Chapter2() {
       </p>
 
       {/* Why Accurate Diagnosis Matters */}
-      <section className="mb-12">
-        <h2 className="text-2xl font-bold text-charcoal mb-6">Why Accurate Diagnosis Matters for Athletes</h2>
+      <section className="content-section mb-12" id="accurate-diagnosis-importance">
+        <h2 className="text-2xl font-bold text-charcoal mb-6">Why Is Accurate Diagnosis Critical For Athletes With Heel Pain?</h2>
+        
+        <div className="direct-answer bg-blue-50 dark:bg-blue-950/30 border-l-4 border-blue-500 p-4 my-5 rounded-r-lg">
+          <p><strong className="text-blue-700 dark:text-blue-300">Direct Answer:</strong> Athletes face unique diagnostic challenges with higher forces, different injury patterns, and time pressures that make accurate self-assessment crucial. Getting the wrong diagnosis means either training through something requiring complete rest or unnecessarily shutting down training for something manageable.</p>
+        </div>
         
         <div className="grid md:grid-cols-2 gap-6 mb-8">
           <Card className="border-l-4 border-l-destructive">
@@ -113,8 +123,12 @@ export default function Chapter2() {
       </section>
 
       {/* Quick Self-Assessment */}
-      <section className="mb-12">
-        <h2 className="text-2xl font-bold text-charcoal mb-6">Quick Self-Assessment for Plantar Fasciitis</h2>
+      <section className="content-section mb-12" id="self-assessment-guide">
+        <h2 className="text-2xl font-bold text-charcoal mb-6">How Can Athletes Self-Assess For Plantar Fasciitis?</h2>
+        
+        <div className="direct-answer bg-blue-50 dark:bg-blue-950/30 border-l-4 border-blue-500 p-4 my-5 rounded-r-lg">
+          <p><strong className="text-blue-700 dark:text-blue-300">Direct Answer:</strong> The hallmark of plantar fasciitis is sharp, stabbing heel pain with first steps in the morning. Key indicators include post-rest flare-ups after sitting 30+ minutes, pain that decreases with gentle movement, and location-specific pain at the bottom of the heel.</p>
+        </div>
         
         <Card className="bg-blue-50 dark:bg-blue-950 border-l-4 border-l-athletic-blue mb-6">
           <CardContent className="p-6">

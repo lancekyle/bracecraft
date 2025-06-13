@@ -112,7 +112,7 @@ export default function SEOHead({
       schemaScript.id = schemaId;
       schemaScript.setAttribute("type", "application/ld+json");
 
-      const schema = {
+      const baseSchema = {
         "@context": "https://schema.org",
         "@type": "Article",
         "headline": title,
@@ -152,6 +152,44 @@ export default function SEOHead({
           "timeRequired": readingTime
         })
       };
+
+      // Add FAQ schema for Chapter 2
+      const schema = chapterNumber === 2 ? [baseSchema, {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [{
+          "@type": "Question",
+          "name": "Why is accurate diagnosis critical for athletes with heel pain?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Athletes face unique diagnostic challenges with higher forces, different injury patterns, and time pressures that make accurate self-assessment crucial. Getting the wrong diagnosis means either training through something requiring complete rest or unnecessarily shutting down training for something manageable."
+          }
+        },
+        {
+          "@type": "Question", 
+          "name": "How can athletes self-assess for plantar fasciitis?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The hallmark of plantar fasciitis is sharp, stabbing heel pain with first steps in the morning. Key indicators include post-rest flare-ups, pain that decreases with gentle movement, and location-specific pain at the bottom of the heel."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When should athletes stop self-treatment and seek professional help?",
+          "acceptedAnswer": {
+            "@type": "Answer", 
+            "text": "Seek professional help for numbness/tingling, severe swelling, fever with foot pain, inability to bear weight, no improvement after 2 weeks, or pain that's worse at night and doesn't follow the classic morning pattern."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can athletes distinguish plantar fasciitis from similar conditions?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Plantar fasciitis causes bottom-heel pain worst in mornings, while Achilles tendonitis affects the back of heel, heel pad syndrome causes deep aching on hard surfaces, and tarsal tunnel syndrome includes numbness/tingling extending into the arch."
+          }
+        }]
+      }] : baseSchema;
 
       schemaScript.textContent = JSON.stringify(schema);
       document.head.appendChild(schemaScript);
