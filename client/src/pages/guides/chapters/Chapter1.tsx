@@ -40,7 +40,7 @@ export default function Chapter1() {
   return (
     <ChapterTemplate
       chapterNumber={1}
-      chapterTitle="The Athletic Difference"
+      chapterTitle="Why Standard Advice Fails Athletes"
       readTime="8 min read"
       author="Dr. Sarah Chen, DPT"
       lastUpdated="December 2024"
@@ -61,15 +61,14 @@ export default function Chapter1() {
 
 
 
+      <p className="text-gray-custom mb-6 text-lg leading-relaxed">
+        Standard plantar fasciitis advice centers on one recommendation: complete rest until symptoms resolve. 
+        This approach works for sedentary individuals experiencing heel pain during daily activities. 
+        <span className="font-bold text-destructive"> It fails catastrophically for athletes.</span>
+      </p>
+
       {/* The Standard Advice Problem */}
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-charcoal mb-6">The Standard Advice Problem</h2>
-        
-        <p className="text-gray-custom mb-6 text-lg leading-relaxed">
-          Standard plantar fasciitis advice centers on one recommendation: complete rest until symptoms resolve. 
-          This approach works for sedentary individuals experiencing heel pain during daily activities. 
-          <span className="font-bold text-destructive"> It fails catastrophically for athletes.</span>
-        </p>
 
         <p className="text-gray-custom mb-8 leading-relaxed">
           The failure isn't about compliance or stubbornness. Athletes face fundamentally different mechanical 
