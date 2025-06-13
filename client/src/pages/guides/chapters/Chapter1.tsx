@@ -224,10 +224,17 @@ export default function Chapter1() {
                 Connective tissue healing requires controlled mechanical stimulus. Complete rest eliminates 
                 the loading necessary for optimal tissue remodeling.
               </p>
-              <p className="text-sm text-charcoal font-semibold bg-athletic-blue bg-opacity-10 p-3 rounded">
-                The challenge is identifying the optimal stimulus zone—enough load to promote healing 
-                without exceeding current tissue capacity.
-              </p>
+              <div className="mt-3 p-4 bg-blue-50 dark:bg-blue-950 border-l-4 border-l-athletic-blue rounded-r">
+                <div className="flex items-start space-x-3">
+                  <div className="text-athletic-blue">
+                    <Target className="w-4 h-4 mt-0.5" />
+                  </div>
+                  <p className="text-sm text-charcoal dark:text-gray-100 font-semibold">
+                    The challenge is identifying the optimal stimulus zone—enough load to promote healing 
+                    without exceeding current tissue capacity.
+                  </p>
+                </div>
+              </div>
             </CardContent>
           </Card>
         </div>
