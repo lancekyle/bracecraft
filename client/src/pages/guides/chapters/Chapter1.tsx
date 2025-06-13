@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import ChapterTemplate from "@/components/ChapterTemplate";
 import { Link } from "wouter";
+import chapterImage from "@assets/image_1749781660694.png";
 
 export default function Chapter1() {
   const ctaSection = (
@@ -73,7 +74,7 @@ export default function Chapter1() {
         <p className="text-gray-custom mb-6 text-lg leading-relaxed">
           Standard plantar fasciitis advice centers on one recommendation: complete rest until symptoms resolve. 
           This approach works for sedentary individuals experiencing heel pain during daily activities. 
-          <strong className="text-charcoal"> It fails catastrophically for athletes.</strong>
+          <span className="font-bold text-destructive"> It fails catastrophically for athletes.</span>
         </p>
 
         <p className="text-gray-custom mb-8 leading-relaxed">
@@ -206,7 +207,7 @@ export default function Chapter1() {
                 Connective tissue healing requires controlled mechanical stimulus. Complete rest eliminates 
                 the loading necessary for optimal tissue remodeling.
               </p>
-              <p className="text-sm text-athletic-blue font-medium">
+              <p className="text-sm text-charcoal font-semibold bg-athletic-blue bg-opacity-10 p-3 rounded">
                 The challenge is identifying the optimal stimulus zone—enough load to promote healing 
                 without exceeding current tissue capacity.
               </p>
@@ -376,10 +377,17 @@ export default function Chapter1() {
         <Card className="bg-athletic-blue bg-opacity-5 border-athletic-blue">
           <CardContent className="p-6">
             <h4 className="font-semibold text-charcoal mb-3">Next-Day Assessment</h4>
-            <p className="text-gray-custom">
+            <p className="text-gray-custom mb-4">
               Use morning symptoms to guide the following day's decisions. Worsening morning pain indicates 
               previous day's training was excessive.
             </p>
+            <div className="w-full">
+              <img 
+                src={chapterImage} 
+                alt="Next-Day Assessment guide showing how to evaluate morning symptoms for training decisions"
+                className="w-full h-auto rounded-lg shadow-md"
+              />
+            </div>
           </CardContent>
         </Card>
       </section>
