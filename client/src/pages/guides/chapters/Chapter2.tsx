@@ -225,8 +225,12 @@ export default function Chapter2() {
       </section>
 
       {/* Red Flags */}
-      <section className="mb-12">
-        <h2 className="text-2xl font-bold text-charcoal mb-6">Red Flags: When NOT to Self-Treat</h2>
+      <section className="content-section mb-12" id="red-flags-professional-help">
+        <h2 className="text-2xl font-bold text-charcoal mb-6">When Should Athletes Stop Self-Treatment And Seek Professional Help?</h2>
+        
+        <div className="direct-answer bg-blue-50 dark:bg-blue-950/30 border-l-4 border-blue-500 p-4 my-5 rounded-r-lg">
+          <p><strong className="text-blue-700 dark:text-blue-300">Direct Answer:</strong> Stop self-treatment immediately for numbness/tingling, severe swelling, fever with foot pain, complete inability to bear weight, no improvement after 2 weeks of modifications, or pain that's worse at night and doesn't follow the classic morning pattern.</p>
+        </div>
         
         <Card className="bg-red-50 dark:bg-red-950 border-l-4 border-l-destructive">
           <CardContent className="p-6">
@@ -270,8 +274,12 @@ export default function Chapter2() {
       </section>
 
       {/* Ruling Out Common Mimics */}
-      <section className="mb-12">
-        <h2 className="text-2xl font-bold text-charcoal mb-6">Ruling Out Common Mimics</h2>
+      <section className="content-section mb-12" id="differential-diagnosis">
+        <h2 className="text-2xl font-bold text-charcoal mb-6">How Can Athletes Distinguish Plantar Fasciitis From Similar Conditions?</h2>
+        
+        <div className="direct-answer bg-blue-50 dark:bg-blue-950/30 border-l-4 border-blue-500 p-4 my-5 rounded-r-lg">
+          <p><strong className="text-blue-700 dark:text-blue-300">Direct Answer:</strong> Plantar fasciitis causes bottom-heel pain worst in mornings, while Achilles tendonitis affects the back of heel during push-off, heel pad syndrome causes deep aching on hard surfaces, and tarsal tunnel syndrome includes numbness/tingling extending into the arch or toes.</p>
+        </div>
         
         <div className="space-y-6">
           <Card>
