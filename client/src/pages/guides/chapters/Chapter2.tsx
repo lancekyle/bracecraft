@@ -22,8 +22,23 @@ export default function Chapter2() {
   const ctaSection = <ChapterCTA />;
 
   return (
-    <ChapterTemplate
-      chapterNumber={2}
+    <>
+      <SEOHead
+        title="Know What You're Dealing With - Chapter 2 | BraceCraft"
+        description="Learn to accurately diagnose plantar fasciitis with self-assessment tools, recognize red flags requiring medical attention, and understand severity grading for proper treatment."
+        keywords="plantar fasciitis diagnosis, heel pain assessment, plantar fasciitis self test, sports injury diagnosis, foot pain evaluation"
+        canonicalUrl="/plantar-fasciitis/race-training/know-what-youre-dealing-with"
+        ogImage="/og-chapter2.jpg"
+        publishedTime="2024-12-01T00:00:00Z"
+        modifiedTime="2024-12-15T00:00:00Z"
+        author="Dr. Sarah Chen, DPT"
+        articleSection="Sports Medicine"
+        readingTime="PT10M"
+        chapterNumber={2}
+        totalChapters={7}
+      />
+      <ChapterTemplate
+        chapterNumber={2}
       chapterTitle="Know What You're Dealing With"
       readTime="7 min read"
       author="Dr. Sarah Chen, DPT"
@@ -66,7 +81,7 @@ export default function Chapter2() {
               <div className="flex items-start space-x-3">
                 <XCircle className="w-6 h-6 text-destructive mt-0.5" />
                 <div>
-                  <h4 className="font-semibold text-charcoal mb-2">Wrong Diagnosis Risks</h4>
+                  <h3 className="font-semibold text-charcoal mb-2">Wrong Diagnosis Risks</h3>
                   <ul className="space-y-2 text-gray-custom">
                     <li>• Training through conditions requiring rest</li>
                     <li>• Unnecessary training shutdowns</li>
@@ -83,7 +98,7 @@ export default function Chapter2() {
               <div className="flex items-start space-x-3">
                 <CheckCircle2 className="w-6 h-6 text-success-green mt-0.5" />
                 <div>
-                  <h4 className="font-semibold text-charcoal mb-2">Accurate Assessment Benefits</h4>
+                  <h3 className="font-semibold text-charcoal mb-2">Accurate Assessment Benefits</h3>
                   <ul className="space-y-2 text-gray-custom">
                     <li>• Targeted treatment approach</li>
                     <li>• Appropriate training modifications</li>
@@ -381,6 +396,7 @@ export default function Chapter2() {
           </CardContent>
         </Card>
       </section>
-    </ChapterTemplate>
+      </ChapterTemplate>
+    </>
   );
 }
