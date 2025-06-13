@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Mail, ShoppingCart, Play, Smartphone } from "lucide-react";
 import { useState } from "react";
+import recoveryKitImage from "@assets/pf-recovery-kit.jpg";
 
 interface ChapterCTAProps {
   productImageUrl?: string;
@@ -81,22 +82,13 @@ export default function ChapterCTA({ productImageUrl }: ChapterCTAProps) {
       <Card className="border-2 border-success-green">
         <CardContent className="p-6">
           <div className="md:flex md:items-center md:space-x-6">
-            {/* Product Image Placeholder */}
+            {/* Product Image */}
             <div className="md:w-1/3 mb-4 md:mb-0">
-              {productImageUrl ? (
-                <img 
-                  src={productImageUrl} 
-                  alt="Plantar Fasciitis 5-piece Recovery Kit"
-                  className="w-full h-auto rounded-lg"
-                />
-              ) : (
-                <div className="bg-light-gray rounded-lg p-8 text-center">
-                  <div className="text-gray-custom mb-2">
-                    <ShoppingCart className="w-12 h-12 mx-auto" />
-                  </div>
-                  <p className="text-sm text-gray-custom">Product Image</p>
-                </div>
-              )}
+              <img 
+                src={productImageUrl || recoveryKitImage} 
+                alt="Plantar Fasciitis 5-piece Recovery Kit"
+                className="w-full h-auto rounded-lg shadow-sm"
+              />
             </div>
 
             {/* Product Details */}
