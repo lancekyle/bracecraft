@@ -13,7 +13,7 @@ import {
 import ChapterTemplate from "@/components/ChapterTemplate";
 import { Link } from "wouter";
 import chapterHeaderImage from "@assets/chapter1-header.webp";
-import nextDayAssessmentImage from "@assets/image_1749781660694.png";
+import morningPainImage from "@assets/morning-pain.webp";
 
 export default function Chapter1() {
   const ctaSection = (
@@ -420,8 +420,8 @@ export default function Chapter1() {
             <div className="flex justify-center mt-4">
               <div className="w-full max-w-sm">
                 <img 
-                  src={nextDayAssessmentImage} 
-                  alt="Next-Day Assessment guide showing how to evaluate morning symptoms for training decisions"
+                  src={morningPainImage} 
+                  alt="Morning pain assessment guide for athletes with plantar fasciitis"
                   className="w-full h-auto rounded-lg shadow-sm"
                 />
               </div>
