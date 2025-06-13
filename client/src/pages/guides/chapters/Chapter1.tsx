@@ -490,16 +490,23 @@ export default function Chapter1() {
           athletes to maintain race goals while respecting tissue healing requirements.
         </p>
 
-        <Card className="bg-brand-teal text-white">
+        <Card className="bg-slate-50 dark:bg-slate-900 border-l-4 border-l-brand-teal">
           <CardContent className="p-6">
-            <h4 className="text-xl font-bold mb-3">Bottom Line</h4>
-            <p className="text-lg font-medium mb-3">
-              Smart training beats stopped training.
-            </p>
-            <p className="text-gray-100">
-              Athletes don't have to choose between foot health and race goals—they need intelligent 
-              strategies that address both simultaneously.
-            </p>
+            <div className="flex items-start space-x-3">
+              <div className="text-brand-teal">
+                <CheckCircle2 className="w-6 h-6 mt-0.5" />
+              </div>
+              <div>
+                <h4 className="text-xl font-bold mb-3 text-charcoal dark:text-gray-100">Bottom Line</h4>
+                <p className="text-lg font-semibold mb-3 text-brand-teal">
+                  Smart training beats stopped training.
+                </p>
+                <p className="text-gray-custom dark:text-gray-300">
+                  Athletes don't have to choose between foot health and race goals—they need intelligent 
+                  strategies that address both simultaneously.
+                </p>
+              </div>
+            </div>
           </CardContent>
         </Card>
       </section>
