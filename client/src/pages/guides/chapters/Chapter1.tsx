@@ -59,25 +59,7 @@ export default function Chapter1() {
         </div>
       </div>
 
-      {/* Introduction */}
-      <Card className="mb-8 border-l-4 border-l-warm-orange">
-        <CardContent className="p-6">
-          <div className="flex items-start space-x-4">
-            <div className="text-warm-orange">
-              <AlertTriangle className="w-6 h-6" />
-            </div>
-            <div>
-              <h3 className="font-semibold text-charcoal mb-2">Core Principle</h3>
-              <p className="text-lg font-medium text-athletic-blue">
-                "Smart training beats stopped training"
-              </p>
-              <p className="text-gray-custom mt-2">
-                This principle will guide every decision you make throughout your plantar fasciitis journey.
-              </p>
-            </div>
-          </div>
-        </CardContent>
-      </Card>
+
 
       {/* The Standard Advice Problem */}
       <section className="mb-12">
