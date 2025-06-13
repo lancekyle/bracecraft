@@ -12,7 +12,8 @@ import {
 } from "lucide-react";
 import ChapterTemplate from "@/components/ChapterTemplate";
 import { Link } from "wouter";
-import chapterImage from "@assets/image_1749781660694.png";
+import chapterHeaderImage from "@assets/Chapter 1 header.webp";
+import nextDayAssessmentImage from "@assets/image_1749781660694.png";
 
 export default function Chapter1() {
   const ctaSection = (
@@ -47,6 +48,15 @@ export default function Chapter1() {
       totalChapters={7}
       ctaSection={ctaSection}
     >
+      {/* Chapter Header Image */}
+      <div className="mb-8">
+        <img 
+          src={chapterHeaderImage} 
+          alt="Chapter 1: Why Standard Advice Fails Athletes - Understanding the unique challenges athletes face with plantar fasciitis treatment"
+          className="w-full h-auto rounded-lg shadow-lg"
+        />
+      </div>
+
       {/* Introduction */}
       <Card className="mb-8 border-l-4 border-l-warm-orange">
         <CardContent className="p-6">
@@ -383,7 +393,7 @@ export default function Chapter1() {
             </p>
             <div className="w-full">
               <img 
-                src={chapterImage} 
+                src={nextDayAssessmentImage} 
                 alt="Next-Day Assessment guide showing how to evaluate morning symptoms for training decisions"
                 className="w-full h-auto rounded-lg shadow-md"
               />
