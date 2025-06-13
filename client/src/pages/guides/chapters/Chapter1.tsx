@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import ChapterTemplate from "@/components/ChapterTemplate";
 import ChapterCTA from "@/components/ChapterCTA";
+import SEOHead from "@/components/SEOHead";
 import { Link } from "wouter";
 import chapterHeaderImage from "@assets/chapter1-header.webp";
 import morningPainImage from "@assets/morning-pain.webp";
@@ -20,8 +21,23 @@ export default function Chapter1() {
   const ctaSection = <ChapterCTA />;
 
   return (
-    <ChapterTemplate
-      chapterNumber={1}
+    <>
+      <SEOHead
+        title="Why Standard Advice Fails Athletes - Chapter 1 | BraceCraft"
+        description="Discover why traditional plantar fasciitis treatment fails athletes and learn performance-focused strategies that keep you training while healing."
+        keywords="plantar fasciitis athletes, athletic training injury, sports medicine plantar fasciitis, performance training heel pain"
+        canonicalUrl="/plantar-fasciitis/race-training/why-standard-advice-fails"
+        ogImage="/og-chapter1.jpg"
+        publishedTime="2024-12-01T00:00:00Z"
+        modifiedTime="2024-12-15T00:00:00Z"
+        author="Dr. Sarah Chen, DPT"
+        articleSection="Sports Medicine"
+        readingTime="PT8M"
+        chapterNumber={1}
+        totalChapters={7}
+      />
+      <ChapterTemplate
+        chapterNumber={1}
       chapterTitle="Why Standard Advice Fails Athletes"
       readTime="8 min read"
       author="Dr. Sarah Chen, DPT"
@@ -507,6 +523,7 @@ export default function Chapter1() {
           </CardContent>
         </Card>
       </section>
-    </ChapterTemplate>
+      </ChapterTemplate>
+    </>
   );
 }

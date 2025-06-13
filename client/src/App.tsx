@@ -25,6 +25,9 @@ function Router() {
           <Route path="/" component={Home} />
           <Route path="/guides/plantar-fasciitis" component={PlanterFasciitisGuides} />
           <Route path="/guides/plantar-fasciitis/training-guide" component={TrainingGuide} />
+          <Route path="/plantar-fasciitis/race-training/why-standard-advice-fails" component={Chapter1} />
+          <Route path="/plantar-fasciitis/race-training/know-what-youre-dealing-with" component={Chapter2} />
+          {/* Legacy redirects */}
           <Route path="/guides/plantar-fasciitis/training-guide/chapter-1" component={Chapter1} />
           <Route path="/guides/plantar-fasciitis/training-guide/chapter-2" component={Chapter2} />
           <Route path="/videos" component={VideoLibrary} />
