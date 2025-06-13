@@ -14,6 +14,7 @@ import NotFound from "@/pages/not-found";
 import PlanterFasciitisGuides from "@/pages/guides/PlanterFasciitisGuides";
 import TrainingGuide from "@/pages/guides/TrainingGuide";
 import Chapter1 from "@/pages/guides/chapters/Chapter1";
+import Chapter2 from "@/pages/guides/chapters/Chapter2";
 
 function Router() {
   return (
@@ -25,6 +26,7 @@ function Router() {
           <Route path="/guides/plantar-fasciitis" component={PlanterFasciitisGuides} />
           <Route path="/guides/plantar-fasciitis/training-guide" component={TrainingGuide} />
           <Route path="/guides/plantar-fasciitis/training-guide/chapter-1" component={Chapter1} />
+          <Route path="/guides/plantar-fasciitis/training-guide/chapter-2" component={Chapter2} />
           <Route path="/videos" component={VideoLibrary} />
           <Route path="/resources" component={Resources} />
           <Route path="/about" component={About} />
