@@ -232,7 +232,7 @@ export default function TrainingGuide() {
                           )}
                         </div>
                         
-                        <Link href={`/guides/plantar-fasciitis/training-guide/chapter-${chapter.id}`}>
+                        <Link href={chapter.id === 1 ? "/plantar-fasciitis/race-training/why-standard-advice-fails" : chapter.id === 2 ? "/plantar-fasciitis/race-training/know-what-youre-dealing-with" : `/guides/plantar-fasciitis/training-guide/chapter-${chapter.id}`}>
                           <Button 
                             variant={progress[`chapter-${chapter.id}`] ? "outline" : "default"}
                             className={progress[`chapter-${chapter.id}`] ? "" : "bg-athletic-blue hover:bg-athletic-blue/90"}
