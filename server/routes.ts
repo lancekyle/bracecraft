@@ -139,6 +139,56 @@ export async function registerRoutes(app: Express): Promise<Server> {
     res.send(html);
   });
 
+  // Legacy Chapter 1 route with schema
+  app.get('/guides/plantar-fasciitis/training-guide/chapter-1', (req, res, next) => {
+    const htmlPath = path.join(process.cwd(), 'client', 'index.html');
+    let html = fs.readFileSync(htmlPath, 'utf8');
+    
+    const schema = getSchemaMarkup(1);
+    const schemaScript = `<script type="application/ld+json">${JSON.stringify(schema)}</script>`;
+    
+    const chapter1Title = "Why Standard Advice Fails - Chapter 1 | BraceCraft";
+    const chapter1Description = "Discover why conventional plantar fasciitis advice fails athletes and learn the key differences in athletic treatment approaches for continued training success.";
+    
+    html = html.replace(/<title>.*?<\/title>/, `<title>${chapter1Title}</title>`);
+    html = html.replace(/(<meta name="description" content=")[^"]*(")/g, `$1${chapter1Description}$2`);
+    html = html.replace('</head>', `    ${schemaScript}\n  </head>`);
+    
+    res.send(html);
+  });
+
+  // Legacy Chapter 2 route with schema
+  app.get('/guides/plantar-fasciitis/training-guide/chapter-2', (req, res, next) => {
+    const htmlPath = path.join(process.cwd(), 'client', 'index.html');
+    let html = fs.readFileSync(htmlPath, 'utf8');
+    
+    const schema = getSchemaMarkup(2);
+    const schemaScript = `<script type="application/ld+json">${JSON.stringify(schema)}</script>`;
+    
+    const chapter2Title = "Know What You're Dealing With - Chapter 2 | BraceCraft";
+    const chapter2Description = "Learn to accurately diagnose plantar fasciitis with self-assessment tools, recognize red flags requiring medical attention, and understand severity grading for proper treatment.";
+    const canonicalUrl = "https://bracecraft.com/plantar-fasciitis/race-training/know-what-youre-dealing-with";
+    
+    html = html.replace(/<title>.*?<\/title>/, `<title>${chapter2Title}</title>`);
+    html = html.replace(/(<meta name="description" content=")[^"]*(")/g, `$1${chapter2Description}$2`);
+    
+    const canonicalLink = `<link rel="canonical" href="${canonicalUrl}" />`;
+    const ogTags = `
+    <meta property="og:title" content="${chapter2Title}" />
+    <meta property="og:description" content="${chapter2Description}" />
+    <meta property="og:url" content="${canonicalUrl}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="https://bracecraft.com/og-chapter2.jpg" />
+    <meta property="article:published_time" content="2024-12-01T00:00:00Z" />
+    <meta property="article:modified_time" content="2024-12-15T00:00:00Z" />
+    <meta property="article:author" content="Dr. Sarah Chen, DPT" />
+    <meta property="article:section" content="Sports Medicine" />`;
+    
+    html = html.replace('</head>', `    ${canonicalLink}\n    ${ogTags}\n    ${schemaScript}\n  </head>`);
+    
+    res.send(html);
+  });
+
   const httpServer = createServer(app);
 
   return httpServer;
