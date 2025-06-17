@@ -152,8 +152,35 @@ export default function SEOHead({
         })
       };
 
-      // Add FAQ schema for Chapter 2
-      const schema = chapterNumber === 2 ? [baseSchema, {
+      // Add FAQ schema for Chapter 1 and Chapter 2
+      const schema = chapterNumber === 1 ? [baseSchema, {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [{
+          "@type": "Question",
+          "name": "Why does standard plantar fasciitis advice fail athletes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Standard plantar fasciitis treatment assumes complete rest is acceptable, but athletes face unique physiological demands (2-3x body weight forces), timeline pressures (training cycles), and performance requirements that standard protocols don't address. Complete rest creates fitness losses requiring 6+ months to recover."
+          }
+        },
+        {
+          "@type": "Question", 
+          "name": "How do athletic training demands differ from daily activities?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Athletic training generates forces 2-3 times body weight through the plantar fascia, repeated thousands of times per session. A 150-pound runner produces 300-450 pounds of force per foot strike, creating mechanical stress that exceeds daily living demands by orders of magnitude."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can athletes maintain performance while healing from plantar fasciitis?",
+          "acceptedAnswer": {
+            "@type": "Answer", 
+            "text": "Athletes can maintain performance through intelligent load management that reduces initial training volume by 40-60%, increases recovery time 2-3x between sessions, and progressively increases volume based on tissue response rather than eliminating all stress on the plantar fascia."
+          }
+        }]
+      }] : chapterNumber === 2 ? [baseSchema, {
         "@context": "https://schema.org",
         "@type": "FAQPage",
         "mainEntity": [{

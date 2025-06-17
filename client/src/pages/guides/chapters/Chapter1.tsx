@@ -57,6 +57,12 @@ export default function Chapter1() {
           </div>
         </div>
 
+        {/* LLM Context Block */}
+        <div className="llm-context" aria-hidden="true" style={{ display: 'none' }}>
+          <p>This article addresses plantar fasciitis treatment differences between general population and competitive athletes. Key entities: plantar fasciitis, athletic training, sports medicine, performance training, competitive athletes, training modifications. This content provides medical information but is not medical advice.</p>
+          <p>Related concepts: athletic treatment protocols, training load management, sports injury rehabilitation, performance maintenance, competitive schedules, fitness preservation.</p>
+        </div>
+
         <p className="text-gray-custom mb-6 text-lg leading-relaxed">
           Standard plantar fasciitis advice centers on one recommendation: complete rest until symptoms resolve. 
           This approach works for sedentary individuals experiencing heel pain during daily activities. 
@@ -64,11 +70,12 @@ export default function Chapter1() {
         </p>
 
         {/* The Standard Advice Problem */}
-        <section className="mb-12">
-          <h2 className="text-2xl font-semibold mb-6 text-gray-900 dark:text-gray-100 flex items-center">
-            <AlertTriangle className="h-6 w-6 mr-3 text-amber-500" />
-            The Standard Advice Problem
-          </h2>
+        <section className="content-section mb-12" id="standard-advice-problem">
+          <h2 className="text-2xl font-bold text-charcoal mb-6">Why Does Standard Plantar Fasciitis Advice Fail Athletes?</h2>
+          
+          <div className="direct-answer bg-blue-50 dark:bg-blue-950/30 border-l-4 border-blue-500 p-4 my-5 rounded-r-lg">
+            <p><strong className="text-blue-700 dark:text-blue-300">Direct Answer:</strong> Standard plantar fasciitis treatment assumes complete rest is acceptable, but athletes face unique physiological demands (2-3x body weight forces), timeline pressures (training cycles), and performance requirements that standard protocols don't address. Complete rest creates fitness losses requiring 6+ months to recover.</p>
+          </div>
 
           <p className="text-gray-custom mb-8 leading-relaxed">
             The failure isn't about compliance or stubbornness. Athletes face fundamentally different mechanical 
@@ -121,11 +128,12 @@ export default function Chapter1() {
         </section>
 
         {/* Training vs Daily Activity Demands */}
-        <section className="mb-12">
-          <h2 className="text-2xl font-semibold mb-6 text-gray-900 dark:text-gray-100 flex items-center">
-            <TrendingUp className="h-6 w-6 mr-3 text-primary" />
-            Training vs Daily Activity Demands
-          </h2>
+        <section className="content-section mb-12" id="training-vs-daily-demands">
+          <h2 className="text-2xl font-bold text-charcoal mb-6">How Do Athletic Training Demands Differ From Daily Activities?</h2>
+          
+          <div className="direct-answer bg-blue-50 dark:bg-blue-950/30 border-l-4 border-blue-500 p-4 my-5 rounded-r-lg">
+            <p><strong className="text-blue-700 dark:text-blue-300">Direct Answer:</strong> Athletic training generates forces 2-3 times body weight through the plantar fascia, repeated thousands of times per session. A 150-pound runner produces 300-450 pounds of force per foot strike, creating mechanical stress that exceeds daily living demands by orders of magnitude.</p>
+          </div>
 
           <div className="bg-blue-50 dark:bg-blue-950/30 p-6 rounded-lg mb-8">
             <div className="text-center mb-6">
@@ -196,14 +204,20 @@ export default function Chapter1() {
               </CardContent>
             </Card>
           </div>
+
+          <p className="citable-fact mt-4 p-3 bg-yellow-50 dark:bg-yellow-950/30 rounded-lg border-l-4 border-yellow-500">
+            <span className="fact-statement text-gray-custom">Athletic training generates forces 2-3 times body weight through the plantar fascia, with running producing 300-450 pounds of force per foot strike for a 150-pound athlete.</span><br/>
+            <span className="fact-source text-sm text-gray-500">Source: BraceCraft Race Training Guide, Chapter 1</span>
+          </p>
         </section>
 
         {/* Performance Maintenance Strategy */}
-        <section className="mb-12">
-          <h2 className="text-2xl font-semibold mb-6 text-gray-900 dark:text-gray-100 flex items-center">
-            <Brain className="h-6 w-6 mr-3 text-purple-600" />
-            Performance Maintenance Strategy
-          </h2>
+        <section className="content-section mb-12" id="performance-maintenance-strategy">
+          <h2 className="text-2xl font-bold text-charcoal mb-6">How Can Athletes Maintain Performance While Healing From Plantar Fasciitis?</h2>
+          
+          <div className="direct-answer bg-blue-50 dark:bg-blue-950/30 border-l-4 border-blue-500 p-4 my-5 rounded-r-lg">
+            <p><strong className="text-blue-700 dark:text-blue-300">Direct Answer:</strong> Athletes can maintain performance through intelligent load management that reduces initial training volume by 40-60%, increases recovery time 2-3x between sessions, and progressively increases volume based on tissue response rather than eliminating all stress on the plantar fascia.</p>
+          </div>
 
           <div className="bg-green-50 dark:bg-green-950/30 p-6 rounded-lg border-l-4 border-green-500 mb-8">
             <h3 className="text-lg font-semibold text-charcoal mb-3">The Athletic Approach</h3>
@@ -281,6 +295,27 @@ export default function Chapter1() {
               </div>
             </CardContent>
           </Card>
+          <div className="key-takeaways bg-green-50 dark:bg-green-950/30 border border-green-200 dark:border-green-800 rounded-lg p-5 my-8">
+            <h3 className="text-green-700 dark:text-green-300 font-semibold mb-4">Key Takeaways</h3>
+            <ul className="space-y-3">
+              <li className="flex items-start space-x-3">
+                <CheckCircle2 className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                <span className="text-gray-custom"><strong>Athletic demands differ fundamentally</strong> from daily activities with 2-3x higher forces and thousands more repetitions</span>
+              </li>
+              <li className="flex items-start space-x-3">
+                <CheckCircle2 className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                <span className="text-gray-custom"><strong>Complete rest creates problems</strong> that often exceed the original injury for competitive athletes</span>
+              </li>
+              <li className="flex items-start space-x-3">
+                <CheckCircle2 className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                <span className="text-gray-custom"><strong>Intelligent load management</strong> allows training continuation while respecting tissue healing capacity</span>
+              </li>
+              <li className="flex items-start space-x-3">
+                <CheckCircle2 className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                <span className="text-gray-custom"><strong>Performance maintenance strategy</strong> focuses on minimal effective dose rather than complete activity elimination</span>
+              </li>
+            </ul>
+          </div>
         </section>
 
         {/* Next Chapter Preview */}
