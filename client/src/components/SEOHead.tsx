@@ -250,6 +250,41 @@ export default function SEOHead({
             "text": "Monitor using daily pain scores (0-10 scale), weekly symptom trends, and training tolerance. Scores 1-3 require minimal modifications, 4-6 suit these moderate protocols, and 7+ require more aggressive modifications or temporary rest periods."
           }
         }]
+      }] : chapterNumber === 4 ? [baseSchema, {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [{
+          "@type": "Question",
+          "name": "What is the most effective surface strategy for plantar fasciitis training?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Start with Tier 1 surfaces (grass, dirt trails, quality treadmills) during active PF management, gradually introduce race surface 3 weeks before race day starting with 10-15 minute segments, and prioritize symptom control over surface specificity throughout the progression."
+          }
+        },
+        {
+          "@type": "Question", 
+          "name": "Which cross-training activities best maintain running fitness during plantar fasciitis?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pool running (aqua jogging) and cycling are Tier 1 alternatives that best maintain running fitness. Pool running preserves biomechanical similarity and intensity capability, while cycling provides excellent cardiovascular benefits with 1 mile easy running ≈ 3-4 miles easy cycling conversion."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How should athletes integrate cross-training with reduced running volume?",
+          "acceptedAnswer": {
+            "@type": "Answer", 
+            "text": "Use direct time substitution for easy runs (45-minute easy run = 45-60 minute easy cross-training), match perceived effort rather than pace for hard sessions, and focus on Tier 1 activities (pool running, cycling) for best carry-over to running performance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What strength training modifications are needed during plantar fasciitis management?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Avoid high-impact activities (box jumps, plyometrics, jump rope) and aggressive calf exercises during active PF. Emphasize hip/glute strength, core stability, and upper body maintenance while reduced running volume increases importance of strength training for muscle maintenance."
+          }
+        }]
       }] : baseSchema;
 
       schemaScript.textContent = JSON.stringify(schema);

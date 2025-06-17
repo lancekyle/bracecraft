@@ -16,6 +16,7 @@ import TrainingGuide from "@/pages/guides/TrainingGuide";
 import Chapter1 from "@/pages/guides/chapters/Chapter1";
 import Chapter2 from "@/pages/guides/chapters/Chapter2";
 import Chapter3 from "@/pages/guides/chapters/Chapter3";
+import Chapter4 from "@/pages/guides/chapters/Chapter4";
 
 function Router() {
   return (
@@ -29,6 +30,7 @@ function Router() {
           <Route path="/plantar-fasciitis/race-training/why-standard-advice-fails" component={Chapter1} />
           <Route path="/plantar-fasciitis/race-training/know-what-youre-dealing-with" component={Chapter2} />
           <Route path="/plantar-fasciitis/race-training/race-distance-modifications" component={Chapter3} />
+          <Route path="/plantar-fasciitis/race-training/sport-specific-protocols" component={Chapter4} />
           <Route path="/videos" component={VideoLibrary} />
           <Route path="/resources" component={Resources} />
           <Route path="/about" component={About} />
