@@ -215,6 +215,41 @@ export default function SEOHead({
             "text": "Plantar fasciitis causes bottom-heel pain worst in mornings, while Achilles tendonitis affects the back of heel, heel pad syndrome causes deep aching on hard surfaces, and tarsal tunnel syndrome includes numbness/tingling extending into the arch."
           }
         }]
+      }] : chapterNumber === 3 ? [baseSchema, {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [{
+          "@type": "Question",
+          "name": "How should training modifications differ by race distance?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Training modifications must preserve the most race-critical energy systems while reducing plantar fascia stress. 5K focuses on VO2 max preservation through cross-training, while marathon requires aerobic base maintenance with 70-80% running volume supplemented by equivalent cross-training time."
+          }
+        },
+        {
+          "@type": "Question", 
+          "name": "How can athletes maintain 5K performance with plantar fasciitis?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "5K performance typically maintains 95-100% of PF-free capacity through intelligent cross-training that preserves VO2 max and neuromuscular power. Replace track intervals with bike intervals, pool running, and elliptical work while maintaining race-specific intensity."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the cross-training intensity and time equivalents for running?",
+          "acceptedAnswer": {
+            "@type": "Answer", 
+            "text": "1 mile easy running equals approximately 3-4 miles easy cycling or 12-15 minutes pool running. For tempo efforts, 1 mile running equals 2.5 miles cycling or 10-12 minutes hard pool running. Match effort levels using RPE rather than strict time conversions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How should athletes monitor progress and adjust training with plantar fasciitis?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Monitor using daily pain scores (0-10 scale), weekly symptom trends, and training tolerance. Scores 1-3 require minimal modifications, 4-6 suit these moderate protocols, and 7+ require more aggressive modifications or temporary rest periods."
+          }
+        }]
       }] : baseSchema;
 
       schemaScript.textContent = JSON.stringify(schema);
