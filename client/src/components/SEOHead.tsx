@@ -285,6 +285,41 @@ export default function SEOHead({
             "text": "Avoid high-impact activities (box jumps, plyometrics, jump rope) and aggressive calf exercises during active PF. Emphasize hip/glute strength, core stability, and upper body maintenance while reduced running volume increases importance of strength training for muscle maintenance."
           }
         }]
+      }] : chapterNumber === 5 ? [baseSchema, {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [{
+          "@type": "Question",
+          "name": "What is the footwear dilemma for athletes with plantar fasciitis?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Optimal PF recovery requires minimalist shoes and reduced heel-toe drop to strengthen foot muscles, while optimal race training needs maximum support, cushioning, and higher heel-toe drop (8-12mm) to reduce plantar fascia stress during high-volume training periods."
+          }
+        },
+        {
+          "@type": "Question", 
+          "name": "What training shoe strategy works best for plantar fasciitis management?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use maximum heel-toe drop (8-12mm), substantial cushioning, and motion control features during training. Rotate shoes by purpose: maximum support for easy runs, moderate support for workouts, and carefully tested options for race day based on distance and symptom severity."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How should athletes choose race day footwear with plantar fasciitis?",
+          "acceptedAnswer": {
+            "@type": "Answer", 
+            "text": "Race day footwear decisions depend on distance and symptom severity. For 5K-10K with mild PF (pain 1-3/10), use preferred performance shoes. For marathons or moderate PF (pain 4-6/10), prioritize support over speed. Test race shoes 6-8 weeks before race day with final decisions made 2 weeks prior."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What insole and support options work best for plantar fasciitis training?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Start with over-the-counter combination insoles providing both arch support and cushioning (Superfeet, PowerStep, Dr. Scholl's athletic). Custom orthotics require 4-8 weeks for fabrication and adaptation, which may not fit race training timelines. Kinesiology tape provides race day arch support when insoles don't fit properly."
+          }
+        }]
       }] : baseSchema;
 
       schemaScript.textContent = JSON.stringify(schema);
