@@ -320,6 +320,41 @@ export default function SEOHead({
             "text": "Start with over-the-counter combination insoles providing both arch support and cushioning (Superfeet, PowerStep, Dr. Scholl's athletic). Custom orthotics require 4-8 weeks for fabrication and adaptation, which may not fit race training timelines. Kinesiology tape provides race day arch support when insoles don't fit properly."
           }
         }]
+      }] : chapterNumber === 6 ? [baseSchema, {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [{
+          "@type": "Question",
+          "name": "What daily monitoring system works best for plantar fasciitis training management?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Track morning pain scale (0-10) immediately upon first steps as your most reliable daily indicator. Scores 0-2 allow minimal training restrictions, 3-5 require moderate modifications, and 6+ need significant restrictions. Include training response assessment during, immediately post, and next-morning evaluations."
+          }
+        },
+        {
+          "@type": "Question", 
+          "name": "What training progression guidelines prevent setbacks with plantar fasciitis?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Never increase total training stress by more than 10% per week including running volume and cross-training intensity. Use step-back strategy every 3-4 weeks reducing load by 20-30%. Maintain 80% easy / 20% hard distribution with surface modifications counting as increased training stress."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What decision-making frameworks guide daily training with plantar fasciitis?",
+          "acceptedAnswer": {
+            "@type": "Answer", 
+            "text": "Use traffic light system for daily decisions: Green (0-3/10 pain) proceed normally, Yellow (4-6/10) significant modifications required, Red (7+/10) rest or gentle cross-training only. Weekly planning adjusts based on symptom trends with setback protocols for minor, moderate, or major increases."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How should athletes respond to plantar fasciitis setbacks during training?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Respond proportionally to setback severity: Minor setbacks (1-2 days increased symptoms) require immediate cross-training substitution and softer surfaces. Moderate setbacks (3-7 days) need 25-50% running volume reduction. Major setbacks (>1 week) warrant reassessing symptom severity and focusing on cross-training fitness maintenance."
+          }
+        }]
       }] : baseSchema;
 
       schemaScript.textContent = JSON.stringify(schema);
