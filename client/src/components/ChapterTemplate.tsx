@@ -181,7 +181,7 @@ export default function ChapterTemplate({
               </p>
             </div>
 
-            {chapterNumber < totalChapters - 1 ? (
+            {chapterNumber < 8 ? (
               <Link href={chapterNumber === 0 ? "/plantar-fasciitis/race-training/why-standard-advice-fails" : chapterNumber === 1 ? "/plantar-fasciitis/race-training/know-what-youre-dealing-with" : chapterNumber === 2 ? "/plantar-fasciitis/race-training/race-distance-modifications" : chapterNumber === 3 ? "/plantar-fasciitis/race-training/sport-specific-protocols" : chapterNumber === 4 ? "/plantar-fasciitis/race-training/gear-strategy" : chapterNumber === 5 ? "/plantar-fasciitis/race-training/training-load-management" : chapterNumber === 6 ? "/plantar-fasciitis/race-training/race-day-strategy" : chapterNumber === 7 ? "/plantar-fasciitis/race-training/conclusion" : `/guides/plantar-fasciitis/${guideSlug}/chapter-${chapterNumber + 1}`}>
                 <Button className="w-full sm:w-auto bg-athletic-blue hover:bg-athletic-blue/90">
                   Next Chapter
