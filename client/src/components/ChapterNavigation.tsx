@@ -35,13 +35,15 @@ export default function ChapterNavigation({
   const [progress, setProgress] = useState<{[key: string]: boolean}>({});
 
   const chapters: Chapter[] = [
-    { id: 1, title: "Why Standard Advice Fails Athletes", slug: "why-standard-advice-fails" },
+    { id: 0, title: "Introduction", slug: "introduction" },
+    { id: 1, title: "Why Standard Advice Fails", slug: "why-standard-advice-fails" },
     { id: 2, title: "Know What You're Dealing With", slug: "know-what-youre-dealing-with" },
-    { id: 3, title: "Race Distance Training Modifications", slug: "race-modifications" },
-    { id: 4, title: "Training Modifications", slug: "training-modifications" },
+    { id: 3, title: "Race Distance Modifications", slug: "race-distance-modifications" },
+    { id: 4, title: "Sport-Specific Protocols", slug: "sport-specific-protocols" },
     { id: 5, title: "Gear Strategy for Race Training", slug: "gear-strategy" },
-    { id: 6, title: "Training Load Management", slug: "load-management" },
-    { id: 7, title: "Race Day Strategy", slug: "race-day" }
+    { id: 6, title: "Training Load Management", slug: "training-load-management" },
+    { id: 7, title: "Race Day Strategy", slug: "race-day-strategy" },
+    { id: 8, title: "Conclusion", slug: "conclusion" }
   ];
 
   useEffect(() => {
