@@ -19,6 +19,7 @@ import Chapter3 from "@/pages/guides/chapters/Chapter3";
 import Chapter4 from "@/pages/guides/chapters/Chapter4";
 import Chapter5 from "@/pages/guides/chapters/Chapter5";
 import Chapter6 from "@/pages/guides/chapters/Chapter6";
+import Chapter7 from "@/pages/guides/chapters/Chapter7";
 
 function Router() {
   return (
@@ -35,6 +36,7 @@ function Router() {
           <Route path="/plantar-fasciitis/race-training/sport-specific-protocols" component={Chapter4} />
           <Route path="/plantar-fasciitis/race-training/gear-strategy" component={Chapter5} />
           <Route path="/plantar-fasciitis/race-training/training-load-management" component={Chapter6} />
+          <Route path="/plantar-fasciitis/race-training/race-day-strategy" component={Chapter7} />
           <Route path="/videos" component={VideoLibrary} />
           <Route path="/resources" component={Resources} />
           <Route path="/about" component={About} />

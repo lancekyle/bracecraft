@@ -232,7 +232,7 @@ export default function TrainingGuide() {
                           )}
                         </div>
                         
-                        <Link href={chapter.id === 1 ? "/plantar-fasciitis/race-training/why-standard-advice-fails" : chapter.id === 2 ? "/plantar-fasciitis/race-training/know-what-youre-dealing-with" : chapter.id === 3 ? "/plantar-fasciitis/race-training/race-distance-modifications" : chapter.id === 4 ? "/plantar-fasciitis/race-training/sport-specific-protocols" : chapter.id === 5 ? "/plantar-fasciitis/race-training/gear-strategy" : chapter.id === 6 ? "/plantar-fasciitis/race-training/training-load-management" : `/guides/plantar-fasciitis/training-guide/chapter-${chapter.id}`}>
+                        <Link href={chapter.id === 1 ? "/plantar-fasciitis/race-training/why-standard-advice-fails" : chapter.id === 2 ? "/plantar-fasciitis/race-training/know-what-youre-dealing-with" : chapter.id === 3 ? "/plantar-fasciitis/race-training/race-distance-modifications" : chapter.id === 4 ? "/plantar-fasciitis/race-training/sport-specific-protocols" : chapter.id === 5 ? "/plantar-fasciitis/race-training/gear-strategy" : chapter.id === 6 ? "/plantar-fasciitis/race-training/training-load-management" : chapter.id === 7 ? "/plantar-fasciitis/race-training/race-day-strategy" : `/guides/plantar-fasciitis/training-guide/chapter-${chapter.id}`}>
                           <Button 
                             variant={progress[`chapter-${chapter.id}`] ? "outline" : "default"}
                             className={progress[`chapter-${chapter.id}`] ? "" : "bg-athletic-blue hover:bg-athletic-blue/90"}
