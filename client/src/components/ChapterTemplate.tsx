@@ -165,7 +165,7 @@ export default function ChapterTemplate({
         <div className="mt-16 pt-8 border-t border-gray-200">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
             {chapterNumber > 1 ? (
-              <Link href={chapterNumber === 2 ? "/plantar-fasciitis/race-training/why-standard-advice-fails" : chapterNumber === 3 ? "/plantar-fasciitis/race-training/know-what-youre-dealing-with" : chapterNumber === 4 ? "/plantar-fasciitis/race-training/race-distance-modifications" : chapterNumber === 5 ? "/plantar-fasciitis/race-training/sport-specific-protocols" : `/guides/plantar-fasciitis/${guideSlug}/chapter-${chapterNumber - 1}`}>
+              <Link href={chapterNumber === 2 ? "/plantar-fasciitis/race-training/why-standard-advice-fails" : chapterNumber === 3 ? "/plantar-fasciitis/race-training/know-what-youre-dealing-with" : chapterNumber === 4 ? "/plantar-fasciitis/race-training/race-distance-modifications" : chapterNumber === 5 ? "/plantar-fasciitis/race-training/sport-specific-protocols" : chapterNumber === 6 ? "/plantar-fasciitis/race-training/gear-strategy" : `/guides/plantar-fasciitis/${guideSlug}/chapter-${chapterNumber - 1}`}>
                 <Button variant="outline" className="w-full sm:w-auto">
                   <ArrowLeft className="w-4 h-4 mr-2" />
                   Previous Chapter
@@ -182,7 +182,7 @@ export default function ChapterTemplate({
             </div>
 
             {chapterNumber < totalChapters ? (
-              <Link href={chapterNumber === 1 ? "/plantar-fasciitis/race-training/know-what-youre-dealing-with" : chapterNumber === 2 ? "/plantar-fasciitis/race-training/race-distance-modifications" : chapterNumber === 3 ? "/plantar-fasciitis/race-training/sport-specific-protocols" : chapterNumber === 4 ? "/plantar-fasciitis/race-training/gear-strategy" : `/guides/plantar-fasciitis/${guideSlug}/chapter-${chapterNumber + 1}`}>
+              <Link href={chapterNumber === 1 ? "/plantar-fasciitis/race-training/know-what-youre-dealing-with" : chapterNumber === 2 ? "/plantar-fasciitis/race-training/race-distance-modifications" : chapterNumber === 3 ? "/plantar-fasciitis/race-training/sport-specific-protocols" : chapterNumber === 4 ? "/plantar-fasciitis/race-training/gear-strategy" : chapterNumber === 5 ? "/plantar-fasciitis/race-training/training-load-management" : `/guides/plantar-fasciitis/${guideSlug}/chapter-${chapterNumber + 1}`}>
                 <Button className="w-full sm:w-auto bg-athletic-blue hover:bg-athletic-blue/90">
                   Next Chapter
                   <ArrowLeft className="w-4 h-4 ml-2 rotate-180" />
