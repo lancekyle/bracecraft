@@ -6,6 +6,7 @@ import { Progress } from "@/components/ui/progress";
 import { 
   BookOpen, 
   Clock, 
+  CheckCircle,
   CheckCircle2, 
   ArrowRight, 
   Target,
@@ -36,60 +37,76 @@ export default function TrainingGuide() {
 
   const chapters = [
     {
-      id: 1,
-      title: "The Athletic Difference",
-      description: "Why standard PF advice fails athletes and the performance maintenance strategy",
+      id: 0,
+      title: "Introduction",
+      description: "Guide overview and approach for competitive athletes with plantar fasciitis",
       duration: "8 min read",
+      icon: <BookOpen className="w-6 h-6" />,
+      topics: ["Target audience", "Guide philosophy", "Expected outcomes"]
+    },
+    {
+      id: 1,
+      title: "Why Standard Advice Fails",
+      description: "Understanding why conventional plantar fasciitis treatment doesn't work for competitive athletes",
+      duration: "12 min read",
       icon: <Target className="w-6 h-6" />,
       topics: ["Training vs daily demands", "Modify vs rest decisions", "Athletic psychology"]
     },
     {
       id: 2,
       title: "Know What You're Dealing With",
-      description: "Self-assessment, red flags, and severity grading for competitive athletes",
-      duration: "12 min read",
+      description: "Comprehensive assessment and understanding of your specific plantar fasciitis presentation",
+      duration: "15 min read",
       icon: <Shield className="w-6 h-6" />,
       topics: ["Self-assessment quiz", "Medical red flags", "Progressive monitoring"]
     },
     {
       id: 3,
-      title: "Race Distance Training Modifications",
-      description: "Specific training adaptations for 5K through ultra distances",
-      duration: "15 min read",
+      title: "Race Distance Modifications",
+      description: "Strategic adaptations for different race distances while managing plantar fasciitis",
+      duration: "18 min read",
       icon: <TrendingUp className="w-6 h-6" />,
       topics: ["5K-Ultra modifications", "Cross-training hierarchy", "Progression guidelines"]
     },
     {
       id: 4,
-      title: "Training Modifications",
-      description: "Surface strategy, cross-training hierarchy, and strength training",
-      duration: "10 min read",
+      title: "Sport-Specific Protocols",
+      description: "Tailored approaches for different running surfaces and training environments",
+      duration: "16 min read",
       icon: <Zap className="w-6 h-6" />,
       topics: ["Surface progression", "Cross-training options", "Strength adaptations"]
     },
     {
       id: 5,
       title: "Gear Strategy for Race Training",
-      description: "Footwear decisions, insoles, and the BraceCraft PF Relief Kit",
-      duration: "8 min read",
+      description: "Equipment decisions and footwear strategies for optimal performance and comfort",
+      duration: "14 min read",
       icon: <Award className="w-6 h-6" />,
       topics: ["Training vs race shoes", "Support strategies", "Gear transitions"]
     },
     {
       id: 6,
       title: "Training Load Management",
-      description: "Daily monitoring, decision frameworks, and setback protocols",
-      duration: "12 min read",
+      description: "Daily monitoring systems and progressive load management for sustainable training",
+      duration: "20 min read",
       icon: <Calendar className="w-6 h-6" />,
       topics: ["Daily assessment", "Traffic light system", "Technology tools"]
     },
     {
       id: 7,
       title: "Race Day Strategy",
-      description: "48-hour protocol, race morning routine, and distance-specific management",
-      duration: "10 min read",
+      description: "Tactical execution for competing with plantar fasciitis",
+      duration: "15 min read",
       icon: <MapPin className="w-6 h-6" />,
       topics: ["Pre-race protocol", "During-race management", "Post-race care"]
+    },
+    {
+      id: 8,
+      title: "Conclusion",
+      description: "Long-term strategies and maintaining progress for continued competitive success",
+      duration: "10 min read",
+      icon: <CheckCircle className="w-6 h-6" />,
+      topics: ["Success principles", "Maintenance strategies", "Long-term outlook"]
     }
   ];
 
