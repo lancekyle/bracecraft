@@ -13,6 +13,7 @@ import About from "@/pages/About";
 import NotFound from "@/pages/not-found";
 import PlanterFasciitisGuides from "@/pages/guides/PlanterFasciitisGuides";
 import TrainingGuide from "@/pages/guides/TrainingGuide";
+import Introduction from "@/pages/guides/chapters/Introduction";
 import Chapter1 from "@/pages/guides/chapters/Chapter1";
 import Chapter2 from "@/pages/guides/chapters/Chapter2";
 import Chapter3 from "@/pages/guides/chapters/Chapter3";
@@ -20,6 +21,7 @@ import Chapter4 from "@/pages/guides/chapters/Chapter4";
 import Chapter5 from "@/pages/guides/chapters/Chapter5";
 import Chapter6 from "@/pages/guides/chapters/Chapter6";
 import Chapter7 from "@/pages/guides/chapters/Chapter7";
+import Conclusion from "@/pages/guides/chapters/Conclusion";
 
 function Router() {
   return (
@@ -30,6 +32,7 @@ function Router() {
           <Route path="/" component={Home} />
           <Route path="/guides/plantar-fasciitis" component={PlanterFasciitisGuides} />
           <Route path="/guides/plantar-fasciitis/training-guide" component={TrainingGuide} />
+          <Route path="/plantar-fasciitis/race-training/introduction" component={Introduction} />
           <Route path="/plantar-fasciitis/race-training/why-standard-advice-fails" component={Chapter1} />
           <Route path="/plantar-fasciitis/race-training/know-what-youre-dealing-with" component={Chapter2} />
           <Route path="/plantar-fasciitis/race-training/race-distance-modifications" component={Chapter3} />
@@ -37,6 +40,7 @@ function Router() {
           <Route path="/plantar-fasciitis/race-training/gear-strategy" component={Chapter5} />
           <Route path="/plantar-fasciitis/race-training/training-load-management" component={Chapter6} />
           <Route path="/plantar-fasciitis/race-training/race-day-strategy" component={Chapter7} />
+          <Route path="/plantar-fasciitis/race-training/conclusion" component={Conclusion} />
           <Route path="/videos" component={VideoLibrary} />
           <Route path="/resources" component={Resources} />
           <Route path="/about" component={About} />
