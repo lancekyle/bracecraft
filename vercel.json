@@ -1,5 +1,5 @@
 {
-  "buildCommand": "npm run build:next",
+  "buildCommand": "node build-next.js",
   "outputDirectory": "out",
   "framework": "nextjs",
   "rewrites": [
