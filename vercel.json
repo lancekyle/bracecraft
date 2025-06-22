@@ -1,6 +1,5 @@
 {
-  "buildCommand": "npx next build",
-  "outputDirectory": "out",
-  "installCommand": "npm install next@latest react@latest react-dom@latest",
-  "framework": "nextjs"
+  "buildCommand": "npm run build:ssg",
+  "outputDirectory": "ssg-build",
+  "framework": null
 }

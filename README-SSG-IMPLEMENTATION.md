@@ -2,10 +2,10 @@
 
 ## What Was Implemented
 
-### 1. Framework Migration
-- **Next.js 13+** with static export configuration
-- **Pages Router** for maximum compatibility with existing React components
-- **Static Generation** for all guide pages at build time
+### 1. Custom SSG Solution
+- **Custom static site generator** built in Node.js to avoid framework conflicts
+- **Pre-rendered HTML pages** with complete content visible in page source
+- **Build script** that generates static files for Vercel deployment
 
 ### 2. SEO Optimization
 - **Pre-rendered HTML** - All content visible in page source
