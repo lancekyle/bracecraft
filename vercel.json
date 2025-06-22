@@ -1,5 +1,5 @@
 {
-  "buildCommand": "node build-next.js",
+  "buildCommand": "node build-next.mjs",
   "outputDirectory": "out",
   "framework": "nextjs",
   "rewrites": [
