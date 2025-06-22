@@ -5,10 +5,17 @@ const nextConfig = {
   images: {
     unoptimized: true
   },
-  assetPrefix: process.env.NODE_ENV === 'production' ? '' : '',
-  basePath: '',
   experimental: {
     appDir: false
+  },
+  webpack: (config) => {
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      '@': './client/src',
+      '@shared': './shared',
+      '@assets': './attached_assets'
+    }
+    return config
   }
 }
 

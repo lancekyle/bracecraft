@@ -1,11 +1,6 @@
 {
   "buildCommand": "npx next build",
   "outputDirectory": "out",
-  "framework": "nextjs",
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
-  ]
+  "installCommand": "npm install next@latest react@latest react-dom@latest",
+  "framework": "nextjs"
 }
