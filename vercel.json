@@ -1,5 +1,11 @@
 {
-  "buildCommand": "npm run build:ssg",
-  "outputDirectory": "ssg-build",
-  "framework": null
+  "buildCommand": "vite build",
+  "outputDirectory": "dist/public",
+  "framework": "vite",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
 }
